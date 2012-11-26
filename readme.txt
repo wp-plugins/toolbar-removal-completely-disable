@@ -31,7 +31,7 @@ Sample how to Insert a Informational Text on Header and Footer when one Plugin i
  * [IE Enhancer and Modernizer](http://wordpress.org/extend/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
  * [Memory Load Consumption db size Usage Indicator](http://wordpress.org/extend/plugins/wp-memory-db-indicator/)
 
-* [Themes](http://slangji.wordpress.com/themes/):
+* [Themes](http://slangji.wordpress.com/themes/): for more nfo [Contact Me](http://slangji.wprdpress.com/contact/)
  * CLEAN
  * MINIMAL
  * SIMPLE
@@ -40,11 +40,8 @@ Sample how to Insert a Informational Text on Header and Footer when one Plugin i
  * EMPTY
  * EMPTY CMS FRAMEWORK
 
-For more Themes nfo please [Contact Me](http://slangji.wprdpress.com/contact/)
-
 All Work Released Under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) License.
-= License =
-
+== License ==
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
@@ -61,20 +58,18 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 The license for this software can be found @ [gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 = Disclaimer =
-
 Part of Copyright belongs to [sLaNGjI's](http://wordpress.org/extend/plugins/profile/slangji) and a portion to their respective owners.
 == Changelog ==
 `All previous release, prior of latest stable, are on fact
 deprecated, and no longer supported on this project:
-is very suggested upgrade to the latest build always!
-This plugin work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) license.`
+is very suggested upgrade to the latest build always!`
 = Development Release =
 Development Code in Becoming.
 = 2009.1208.2009 =
-* Release [STABLE] Sample how to Insert a Informational Text on Header and Footer when one Plugin is Active.
+* Release [STABLE] Insert Informational Text on Header / Footer when Plugin is Active
  * First Plugin Release
  * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) license
  * Version 2009 Build 1208 Revision 2009
 == Upgrade Notice ==
 = 2009.1208.2009 =
-* Release [STABLE] Sample how to Insert a Informational Text on Header and Footer when one Plugin is Active.
+* Release [STABLE] Insert Informational Text on Header / Footer when Plugin is Active
