@@ -1,4 +1,4 @@
-=== wordpress.org/extend/plugins/profile/slangji ===
+=== profiles.wordpress.org/slangji ===
 Contributors: sLa
 Donate link: http://slangji.wordpress.com/donate/
 Tags: sLa,Plugin,Theme,GitHub,SoftPedia,WordPress,Plugins,Themes,Informational,Text,Header,Footer
@@ -11,9 +11,9 @@ Author URL sLa is moved to sLaNGjI: please update your bookmarks!
 == Description ==
 Author URL [sLa](http://wordpress.org/extend/plugins/profile/sla) is moved to [sLaNGjI's](http://wordpress.org/extend/plugins/profile/slangji): please update your bookmarks!
 
-Author Website: [slangji.wordpress.com](http://slangji.wordpress.com/) - Author Repositories: [github.com/sLaNGjI](https://github.com/sLaNGjI)
+sLaNGjI's Website: [slangji.wordpress.com](http://slangji.wordpress.com/) - sLaNGjI's Repositories: [github.com/slangji](https://github.com/slangji)
 
-Find More on [sLa Developer Page @ SoftPedia.com](http://webscripts.softpedia.com/author/sLa-1869786722.html) - [Donate](http://slangji.wordpress.com/donate/)
+Find More on [sLaNGjI's Developer Page @ SoftPedia.com](http://webscripts.softpedia.com/author/sLa-1869786722.html) - [Donate](http://slangji.wordpress.com/donate/)
 
 Sample how to Insert a Informational Text on Header and Footer when one Plugin is Active.
 
@@ -31,7 +31,7 @@ Sample how to Insert a Informational Text on Header and Footer when one Plugin i
  * [IE Enhancer and Modernizer](http://wordpress.org/extend/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
  * [Memory Load Consumption db size Usage Indicator](http://wordpress.org/extend/plugins/wp-memory-db-indicator/)
 
-* [Themes](http://slangji.wordpress.com/themes/): for more nfo [Contact Me](http://slangji.wprdpress.com/contact/)
+* [Themes](http://slangji.wordpress.com/themes/): for more nfo [Contact Me](http://slangji.wordpress.com/contact/)
  * CLEAN
  * MINIMAL
  * SIMPLE
@@ -40,7 +40,7 @@ Sample how to Insert a Informational Text on Header and Footer when one Plugin i
  * EMPTY
  * EMPTY CMS FRAMEWORK
 
-All Work Released Under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) License.
+All Work Released Under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) License or later.
 == License ==
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -58,7 +58,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 The license for this software can be found @ [gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 = Disclaimer =
-Part of Copyright belongs to [sLaNGjI's](http://wordpress.org/extend/plugins/profile/slangji) and a portion to their respective owners.
+Part of Copyright belongs to [sLaNGjI's](http://profiles.wordpress.org/slangji) and a portion to their respective owners.
 == Changelog ==
 `All previous release, prior of latest stable, are on fact
 deprecated, and no longer supported on this project:
@@ -66,10 +66,10 @@ is very suggested upgrade to the latest build always!`
 = Development Release =
 Development Code in Becoming.
 = 2009.1208.2009 =
-* Release [STABLE] Insert Informational Text on Header / Footer when Plugin is Active
+* Release [STABLE] Insert Informational Text on Header and Footer when Plugin is Active
  * First Plugin Release
- * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) license
+ * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) license or later
  * Version 2009 Build 1208 Revision 2009
 == Upgrade Notice ==
 = 2009.1208.2009 =
-* Release [STABLE] Insert Informational Text on Header / Footer when Plugin is Active
+* Release [STABLE] Insert Informational Text on Header and Footer when Plugin is Active
