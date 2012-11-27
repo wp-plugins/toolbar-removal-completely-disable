@@ -1,4 +1,4 @@
-=== profiles.wordpress.org/sla ===
+=== sLa2sLaNGjI's ===
 Contributors: sLa
 Donate link: http://slangji.wordpress.com/donate/
 Tags: sLa,Plugin,Theme,GitHub,SoftPedia,WordPress,Plugins,Themes,Informational,Text,Header,Footer
