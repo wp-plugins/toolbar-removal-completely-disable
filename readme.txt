@@ -19,8 +19,8 @@ Sample how to Insert a Informational Text on Header and Footer when one Plugin i
 
 * [Plugins](http://slangji.wordpress.com/plugins/):
  * [WP Overview (lite)](http://wordpress.org/extend/plugins/wp-overview-lite/)
- * [WP Overview (lite) MU](http://wordpress.org/extend/plugins/wp-overview-mu/)
- * [WP Overview (lite) MS](http://wordpress.org/extend/plugins/wp-overview-ms/)
+ * [WP Overview (lite) MU](http://wordpress.org/extend/plugins/wp-overview-lite-mu/)
+ * [WP Overview (lite) MS](http://wordpress.org/extend/plugins/wp-overview-lite-ms/)
  * [WP Missed Schedule](http://wordpress.org/extend/plugins/wp-missed-schedule/)
  * [WP Admin Bar Removal](http://wordpress.org/extend/plugins/wp-admin-bar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
  * [WP Admin Bar Node Removal](http://wordpress.org/extend/plugins/wp-admin-bar-node-removal/)
