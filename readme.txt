@@ -4,9 +4,11 @@ Donate link: http://slangji.wordpress.com/donate/
 Tags: sLa,Plugin,Theme,GitHub,SoftPedia,WordPress,Plugins,Themes,Informational,Text,Header,Footer
 Stable tag: 2009.1208.2009
 Requires at least: 2.1
-Tested up to: 3.5
+Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Indentation: GNU style coding standard
+Indentation URI: http://www.gnu.org/prep/standards/standards.html
 Author URL sLa is moved to sLaNGjI: please update your bookmarks!
 == Description ==
 Author URL [sLa](http://wordpress.org/extend/plugins/profile/sla) is moved to [sLaNGjI's](http://wordpress.org/extend/plugins/profile/slangji): please update your bookmarks!
@@ -16,6 +18,12 @@ sLaNGjI's Website: [slangji.wordpress.com](http://slangji.wordpress.com/) - sLaN
 Find More on [sLaNGjI's Developer Page @ SoftPedia.com](http://webscripts.softpedia.com/author/sLa-1869786722.html) - [Donate](http://slangji.wordpress.com/donate/)
 
 Sample how to Insert a Informational Text on Header and Footer when one Plugin is Active.
+
+Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+
+This software implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+
+This software meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements. The author is available at any time, to make any changes or corrections to meet these detailed plugin guidelines specifications.
 
 * [Plugins](http://slangji.wordpress.com/plugins/):
  * [WP Overview (lite)](http://wordpress.org/extend/plugins/wp-overview-lite/)
@@ -40,7 +48,6 @@ Sample how to Insert a Informational Text on Header and Footer when one Plugin i
  * EMPTY
  * EMPTY CMS FRAMEWORK
 
-All Work Released Under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) License or later.
 == License ==
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -56,9 +63,9 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-The license for this software can be found @ [gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
-= Disclaimer =
-Part of Copyright belongs to [sLaNGjI's](http://profiles.wordpress.org/slangji) and a portion to their respective owners.
+The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html)
+= Copyright =
+Part of Copyright © 2009-2013 belongs to [sLaNGjI's](http://profiles.wordpress.org/slangji) (slangji[at]gmail[dot]com) and a portion to their respective owners.
 == Changelog ==
 `All previous release, prior of latest stable, are on fact
 deprecated, and no longer supported on this project:
@@ -68,7 +75,9 @@ Development Code in Becoming.
 = 2009.1208.2009 =
 * Release [STABLE] Insert Informational Text on Header and Footer when Plugin is Active
  * First Plugin Release
- * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) license or later
+ * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License
+ * Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+ * Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
  * Version 2009 Build 1208 Revision 2009
 == Upgrade Notice ==
 = 2009.1208.2009 =
