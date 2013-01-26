@@ -75,7 +75,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 = Guidelines =
 * This software meet [Detailed Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
 
-* The author of this plugin is available at any time, to make any changes, or corrections, to respect these specifications.
+* The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
 = Copyright =
 Part of Copyright © 2009-2013 belongs to [sLaNGjI's](http://profiles.wordpress.org/slangji) and a portion to their respective owners.
 = Thanks =
@@ -85,7 +85,7 @@ Thanks to all that add one credit link, or make a small donation for my free wor
 deprecated, and no longer supported on this project:
 is very suggested upgrade to the latest build always!`
 = Development Status =
-Development Code in Becoming.
+Developmental Code in Becoming.
 = 2009.1208.2009 =
 * Release [STABLE] Insert Informational Text on Header and Footer when Plugin is Active
  * First Plugin Version.
