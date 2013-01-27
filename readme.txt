@@ -7,9 +7,9 @@ Requires at least: 2.1
 Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-&#9733;&#9733;&#9733; Author URL <a href="http://wordpress.org/extend/plugins/profile/sla" title="Author sLa">sLa</a> is moved to <a href="http://wordpress.org/extend/plugins/profile/slangji" title="Author sLaNGjI">sLaNGjI</a>: please update bookmarks! Sample to Insert Informational Text on Header and Footer when Plugin is Active.
+&#9733;&#9733;&#9733; Author URL <a href="http://wordpress.org/extend/plugins/profile/sla" title="Author sLa">sLa</a> is moved to <a href="http://wordpress.org/extend/plugins/profile/slangji" title="Author sLaNGjI">sLaNGjI</a>: update bookmarks! Sample to Insert Informational Text on Header and Footer when Plugin is Active.
 == Description ==
-Author URL [sLa](http://wordpress.org/extend/plugins/profile/sla) is moved to [sLaNGjI](http://wordpress.org/extend/plugins/profile/slangji): please update bookmarks!
+Author URL [sLa](http://wordpress.org/extend/plugins/profile/sla) is moved to [sLaNGjI](http://wordpress.org/extend/plugins/profile/slangji): update bookmarks!
 
 Author Website: [slangji.wordpress.com](http://slangji.wordpress.com/) - Author Repositories: [github.com/slangji](https://github.com/slangji)
 
