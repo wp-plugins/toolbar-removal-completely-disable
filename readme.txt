@@ -7,7 +7,7 @@ Requires at least: 2.1
 Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-★★★ Author URL <a href="http://wordpress.org/extend/plugins/profile/sla" title="Author sLa">sLa</a> is moved to <a href="http://wordpress.org/extend/plugins/profile/slangji" title="Author sLaNGjI">sLaNGjI</a>: please update bookmarks! Sample to Insert Informational Text on Header and Footer when Plugin is Active.
+&#9733;&#9733;&#9733; Author URL <a href="http://wordpress.org/extend/plugins/profile/sla" title="Author sLa">sLa</a> is moved to <a href="http://wordpress.org/extend/plugins/profile/slangji" title="Author sLaNGjI">sLaNGjI</a>: please update bookmarks! Sample to Insert Informational Text on Header and Footer when Plugin is Active.
 == Description ==
 Author URL [sLa](http://wordpress.org/extend/plugins/profile/sla) is moved to [sLaNGjI](http://wordpress.org/extend/plugins/profile/slangji): please update bookmarks!
 
@@ -74,6 +74,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 * There is some legal grey area regarding what is considered a derivative work, but we feel strongly that plugins and themes are derivative work and thus inherit the GPL license.
 = Guidelines =
 * This software meet [Detailed Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
+
+* This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/extend/plugins/about/validator/) directives.
 
 * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
 = Copyright =
