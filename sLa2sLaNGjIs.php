@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Plugin Name: √ sLa2sLaNGjI's
 Plugin URI: http://slangji.wordpress.com/plugins/
@@ -7,7 +7,7 @@ Version: 2009.1208.2009
 Author: sLa
 Author URI: http://slangji.wordpress.com/
 Requires at least: 2.1
-Tested up to: 3.7
+Tested up to: 3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style coding standard
@@ -134,3 +134,4 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	add_action('login_footer', 'sLa2sLaNGjIs');
 	add_action('wp_head', 'sLa2sLaNGjIs');
 	add_action('wp_footer', 'sLa2sLaNGjIs');
+?>
