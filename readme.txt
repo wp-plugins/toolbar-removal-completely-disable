@@ -80,8 +80,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
 = Copyright =
 Part of Copyright © 2009-2013 belongs to [sLaNGjI's](http://profiles.wordpress.org/slangji) and a portion to their respective owners.
-= Thanks =
-Thanks to all that add one credit link, or make a small donation for my free work :D
 == Changelog ==
 `All previous release, prior of latest stable, are on fact
 deprecated, and no longer supported on this project:
