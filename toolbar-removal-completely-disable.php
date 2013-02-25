@@ -1,21 +1,21 @@
 <?php
 /*
-Plugin Name: sLa2sLaNGjI's
-Plugin URI: http://slangji.wordpress.com/plugins/
-Description: Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated.
-Version: 2009.1208.2009
+Plugin Name: Disable WordPress ToolBar
+Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
+Description: Disable new WordPress 3.3+ and later ToolBar Frontend.
+Version: 2011.1212.2011
 Author: sLa
 Author URI: http://slangji.wordpress.com/
-Requires at least: 2.1
+Requires at least: 3.3
 Tested up to: 3.8
-License: GPLv2 or later
+License: GPLv2 (or later)
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Indentation: GNU style coding standard
+Indentation: GNU (style coding standard)
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
- * sLa2sLaNGjI's - Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated.
+ * Disable WordPress ToolBar - Disable new WordPress 3.3+ and later ToolBar Frontend.
  *
- * Copyright (C) 2009-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
@@ -31,17 +31,6 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * along with this program; if not, see [GNU General Public Licenses](http://www.gnu.org/licenses/),
  * or write to the Free Software Foundation, Inc., 51 Franklin Street,
  * Fifth Floor, Boston, MA 02110-1301, USA.
- *
- * √ THERMS
- *
- * This uses code derived from
- * wp-footer-log.php by sLa <slangji[at]gmail[dot]com>
- * sLa2sLaNGjIs.php by sLa <slangji[at]gmail[dot]com>
- * according to the terms of the GNU General Public License version 2 (or later)
- *
- * According to the Terms of the GNU General Public License version 2 (or later) part of Copyright belongs to your own author and part belongs to their respective others authors:
- *
- * Copyright (C) 2009-2013 sLa (email: <slangji[at]gmail[dot]com>)
  *
  * √ DISCLAIMER
  *
@@ -81,8 +70,8 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 /**
  * @package sLa2sLaNGjIs
  * @subpackage WordPress PlugIn
- * @since 2.1.0
- * @version 2009.1208.2009
+ * @since 3.3.0
+ * @version 2011.1212.2011
  * @status STABLE (release)
  * @author sLa
  * @license GPLv2 (or later)
@@ -94,14 +83,10 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 			header('HTTP/1.1 403 Forbidden');
 			exit();
 		}
-	function sLa2sLaNGjIs()
+	show_admin_bar(false);
+	function admin_toolbar_init()
 		{
-			echo "\n<!--Plugin sLa2sLaNGjIs 2009.1208.2009 Active-->\n\n";
+			add_filter('show_admin_bar', '__return_false');
 		}
-	add_action('admin_head', 'sLa2sLaNGjIs');
-	add_action('admin_footer', 'sLa2sLaNGjIs');
-	add_action('login_head', 'sLa2sLaNGjIs');
-	add_action('login_footer', 'sLa2sLaNGjIs');
-	add_action('wp_head', 'sLa2sLaNGjIs');
-	add_action('wp_footer', 'sLa2sLaNGjIs');
+	add_filter('init', 'admin_toolbar_init', 9);
 ?>
