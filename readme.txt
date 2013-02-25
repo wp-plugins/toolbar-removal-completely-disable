@@ -1,15 +1,15 @@
-=== sLa2sLaNGjI's ===
+=== Disable WordPress ToolBar ===
 Contributors: sLa
 Donate link: http://slangji.wordpress.com/donate/
-Tags: sample,insert,info,text,log,footer,header,plugin,plugins,sLa,sLaNGjI,sLaNGjIs
-Stable tag: 2009.1208.2009
-Requires at least: 2.1
+Tags: disable,WordPress,toolbar,frontend,sLaNGjI,plugin,plugins,sLa,sLaNGjI,sLaNGjIs
+Stable tag: 2011.1212.2011
+Requires at least: 3.3
 Tested up to: 3.8
-License: GPLv2 or later
+License: GPLv2 (or later)
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated.
+Disable new WordPress 3.3+ and later ToolBar Frontend.
 == Description ==
-Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated.
+Disable new WordPress 3.3+ and later ToolBar Frontend.
 == Installation ==
 = Plugin Installation =
 1. Upload this plugin to the `/wp-content/plugins/` directory
@@ -47,8 +47,8 @@ deprecated, and no longer supported on this project:
 is very suggested upgrade to the latest build always!`
 = Development Status =
 Developmental Code in Becoming.
-= 2009.1208.2009 =
-* Release [STABLE] Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated
+= 2011.1212.2011 =
+* Release [STABLE] Disable new WordPress 3.3+ and later ToolBar Frontend
  * First Plugin Version.
  * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
  * Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
@@ -67,12 +67,12 @@ Developmental Code in Becoming.
  * Nothing is written into wp_option database table.
  * Version 2009 Build 1208 Revision 2009
 == Upgrade Notice ==
-= 2009.1208.2009 =
-* Release [STABLE] Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated
+= 2011.1212.2011 =
+* Release [STABLE] Disable new WordPress 3.3+ and later ToolBar Frontend
 = License =
-sLa2sLaNGjI's - Sample to Insert Informational Text Log on Header and Footer when Plugin is Activated
+Disable WordPress ToolBar - Disable new WordPress 3.3+ and later ToolBar Frontend.
 
-Copyright (C) 2009 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
+Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
 
 * This program is free software; you can redistribute it and/or
 modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
@@ -89,15 +89,6 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html) and as license.txt into this plugin package.
-= Therms =
-This uses code derived from
-1. wp-footer-log.php by sLa <slangji[at]gmail[dot]com>
-1. sLa2sLaNGjIs.php by sLa <slangji[at]gmail[dot]com>
-according to the terms of the GNU General Public License version 2 (or later)
-
-According to the Terms of the GNU General Public License version 2 (or later) part of Copyright belongs to your own author and part belongs to their respective others authors:
-
-1. Copyright (C) 2009 sLa (email: <slangji[at]gmail[dot]com>)
 = Disclaimer =
 * The license under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. A copy of the license is included with every copy of WordPress.
 
