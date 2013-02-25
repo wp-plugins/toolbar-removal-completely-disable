@@ -65,7 +65,7 @@ Developmental Code in Becoming.
  * Run on Hosting with high and low resources.
  * Nothing is written into space disk.
  * Nothing is written into wp_option database table.
- * Version 2009 Build 1208 Revision 2009
+ * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
 = 2011.1212.2011 =
 * Release [STABLE] Disable new WordPress 3.3+ and later ToolBar Frontend
