@@ -1,5 +1,5 @@
 === Disable WordPress ToolBar ===
-Contributors: sLa
+Contributors: sLaNGjI
 Donate link: http://slangji.wordpress.com/donate/
 Tags: disable,WordPress,toolbar,frontend,sLaNGjI,plugin,plugins,sLa,sLaNGjI,sLaNGjIs
 Stable tag: 2011.1212.2011
