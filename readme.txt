@@ -1,15 +1,15 @@
 === Disable WordPress ToolBar ===
 Contributors: sLaNGjI
 Donate link: http://slangji.wordpress.com/donate/
-Tags: disable,WordPress,toolbar,frontend,sLaNGjI,plugin,plugins,sLa,sLaNGjI,sLaNGjIs
-Stable tag: 2011.1212.2011
-Requires at least: 3.3
-Tested up to: 3.8
-License: GPLv2 (or later)
+Tags: disable,WordPress,admin,bar,toolbar,frontend,sLa,sLaNGjI,sLaNGjIs,plugin,plugins
+Stable tag: 2013.0613.0448
+Requires at least: 3.1
+Tested up to: 3.6
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Disable new WordPress 3.3+ and later ToolBar Frontend.
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend, only.
 == Description ==
-Disable new WordPress 3.3+ and later ToolBar Frontend.
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend, only. This is only a "basic" frontend removal. For "full" frontend and backend removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal?</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal?</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal?</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal?</a>
 == Installation ==
 = Plugin Installation =
 1. Upload this plugin to the `/wp-content/plugins/` directory
@@ -46,13 +46,20 @@ Markdown uses email style notation for blockquotes and I've been told:
 deprecated, and no longer supported on this project:
 is very suggested upgrade to the latest build always!`
 = Development Status =
-Developmental Code in Becoming.
-= 2011.1212.2011 =
-* Release [STABLE] Disable new WordPress 3.3+ and later ToolBar Frontend
- * First Plugin Version.
+Developmental Code in Becoming!
+= Common Features =
  * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
  * Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
  * Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+= 2013.0613.0448 =
+* Release [STABLE] Disable Frontend Admin Bar and ToolBar
+ * NEW Add Header and Footer Log
+ * UPDATED somes related class removal
+ * UPDATED plugin description
+ * Bump Version 2013 Build 0613 Revision 0448
+= 2011.1212.2011 =
+* Release [STABLE] Disable Frontend Admin Bar and ToolBar
+ * First Plugin Version.
  * Less Plugin Memory Consumption.
  * Full Strict Security Rules Applied.
  * Handy Syntax Improvement.
@@ -67,10 +74,12 @@ Developmental Code in Becoming.
  * Nothing is written into wp_option database table.
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
+= 2013.0613.0448 =
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend (only).
 = 2011.1212.2011 =
-* Release [STABLE] Disable new WordPress 3.3+ and later ToolBar Frontend
+* Release [STABLE] Disable Frontend Admin Bar and ToolBar
 = License =
-Disable WordPress ToolBar - Disable new WordPress 3.3+ and later ToolBar Frontend.
+Disable Frontend Admin Bar and ToolBar - Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend (only).
 
 Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
 

@@ -1,19 +1,25 @@
 <?php
 /*
-Plugin Name: Disable WordPress ToolBar
+Plugin Name: Disable Frontend Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: Disable new WordPress 3.3+ and later ToolBar Frontend.
-Version: 2011.1212.2011
+Description: Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend, only. This is only a "basic" frontend removal. For "full" frontend and backend removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal?</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal?</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal?</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal?</a>
+Version: 2013.0613.0448
 Author: sLa
 Author URI: http://slangji.wordpress.com/
-Requires at least: 3.3
-Tested up to: 3.8
-License: GPLv2 (or later)
+Requires at least: 3.1
+Tested up to: 3.6
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Indentation: GNU (style coding standard)
+Indentation: GNU style
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
- * Disable WordPress ToolBar - Disable new WordPress 3.3+ and later ToolBar Frontend.
+ * Disable Frontend Admin Bar and ToolBar - Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend (only).
+ *
+ * Please Noted That:
+ * For Completely Backend Removal is needed on WordPress 3.1+ (or later) [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
+ * Try also your Add-On [WP Admin Bar Removal Node](http://wordpress.org/plugins/wp-admin-bar-node-removal/)
+ * For Completely Backend Removal is needed on WordPress 3.3+ (or later) [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
+ * Try also your Add-On [WP ToolBar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
  *
  * Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
  *
@@ -54,7 +60,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * √ GUIDELINES
  *
- * This software meet [Detailed Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
+ * This software meet [Detailed Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * √ CODING
@@ -64,29 +70,51 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * √ VALIDATION
  *
- * This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/extend/plugins/about/validator/) directives.
+ * This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/plugins/about/validator/) directives.
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  */
+
 /**
- * @package sLa2sLaNGjIs
+ * @package Disable Frontend Admin Bar and ToolBar
  * @subpackage WordPress PlugIn
- * @since 3.3.0
- * @version 2011.1212.2011
- * @status STABLE (release)
+ * @since 3.1.0
+ * @version 2013.0613.0448
+ * @status STABLE release
  * @author sLa
- * @license GPLv2 (or later)
- * @indentation GNU (style coding standard)
+ * @license GPLv2 or later
+ * @indentation GNU style
  */
-	if (!function_exists('add_action'))
+
+	if ( !function_exists( 'add_action' ) )
 		{
-			header('HTTP/1.0 403 Forbidden');
-			header('HTTP/1.1 403 Forbidden');
-			exit();
+			header( 'HTTP/0.9 403 Forbidden' );
+			header( 'HTTP/1.0 403 Forbidden' );
+			header( 'HTTP/1.1 403 Forbidden' );
+			header( 'Status: 403 Forbidden' );
+			header( 'Connection: Close' );
+				exit();
 		}
-	show_admin_bar(false);
-	function admin_toolbar_init()
+
+	show_admin_bar( false );
+	show_tool_bar( false );
+	show_toolbar( false );
+
+	function wp_admin_tool_bar_init()
 		{
-			add_filter('show_admin_bar', '__return_false');
+			add_filter( 'show_admin_bar', '__return_false' );
+			add_filter( 'wp_admin_bar_class', '__return_false' );
+			add_filter( 'show_tool_bar', '__return_false' );
+			add_filter( 'wp_tool_bar_class', '__return_false' );
+			add_filter( 'show_toolbar', '__return_false' );
+			add_filter( 'wp_toolbar_class', '__return_false' );
 		}
-	add_filter('init', 'admin_toolbar_init', 9);
+	add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
+
+function wp_trcd_log()
+	{
+		echo "\n<!--Plugin Toolbar Removal Completely Disable 2013.0613.0448 Active-->\n\n";
+	}
+add_action( 'wp_head', 'wp_trcd_log' );
+add_action( 'wp_footer', 'wp_trcd_log' );
+
 ?>
