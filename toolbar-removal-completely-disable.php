@@ -1,8 +1,9 @@
 <?php
+
 /*
 Plugin Name: √ Disable Frontend Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: &#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend, only. This is only a "basic" frontend removal. For "full" frontend and backend removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal?</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal?</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal?</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal?</a>
+Description: &#9733;&#9733;&#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Frontend, only. This is only a "basic" frontend removal. For "full" frontend and backend removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal?</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal?</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal?</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal?</a>
 Version: 2013.0613.0448
 Author: sLa
 Author URI: http://slangji.wordpress.com/
@@ -95,26 +96,54 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 				exit();
 		}
 
-	show_admin_bar( false );
-	show_tool_bar( false );
-	show_toolbar( false );
+	function wptrcd_rbcb()
+		{
+			if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
+				{
+					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
+				}
+		}
+	add_filter('wp_head', 'wptrcd_rbcb', 1);
+
+	//show_admin_bar( false );
+
+	function wptrcd_ras()
+		{
+			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
+		}
+	add_action('admin_head', 'wptrcd_ras');
+
+	function wptrcd_rsb()
+		{
+			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
+		}
+	add_action('admin_print_styles', 'wptrcd_rsb', 21);
+
+//	function wptrcd_rac()
+//		{
+//			echo '<style type="text/css">body.admin-bar #wpcontent,body.admin-bar #adminmenu{padding-top:0px}</style>';
+//		}
+//	add_action('admin_print_styles', 'wptrcd_rac', 21);
 
 	function wp_admin_tool_bar_init()
 		{
-			add_filter( 'show_admin_bar', '__return_false' );
+			//add_filter( 'show_admin_bar', '__return_false' );
 			add_filter( 'wp_admin_bar_class', '__return_false' );
-			add_filter( 'show_tool_bar', '__return_false' );
-			add_filter( 'wp_tool_bar_class', '__return_false' );
-			add_filter( 'show_toolbar', '__return_false' );
-			add_filter( 'wp_toolbar_class', '__return_false' );
+			add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
 		}
 	add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
 
-function wp_trcd_log()
-	{
-		echo "\n<!--Plugin Toolbar Removal Completely Disable 2013.0613.0448 Active-->\n\n";
-	}
-add_action( 'wp_head', 'wp_trcd_log' );
-add_action( 'wp_footer', 'wp_trcd_log' );
+	function wptrcd_ruppoabpc()
+		{
+			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
+		}
+	add_action('admin_print_styles-profile.php', 'wptrcd_ruppoabpc');
+
+	function wptrcd_log()
+		{
+			echo "\n<!--Plugin Toolbar Removal Completely Disable 2013.0613.0448 Active-->\n\n";
+		}
+	add_action( 'wp_head', 'wptrcd_log' );
+	add_action( 'wp_footer', 'wptrcd_log' );
 
 ?>

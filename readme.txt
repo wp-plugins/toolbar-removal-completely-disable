@@ -54,8 +54,14 @@ Developmental Code in Becoming!
 = 2013.0613.0448 =
 * Release [STABLE] Disable Frontend Admin Bar and ToolBar
  * NEW Add Header and Footer Log
- * UPDATED somes related class removal
- * UPDATED plugin description
+ * NEW Removed Unnecessary Complex Code
+ * NEW Disabled Redundant and Unneeded Filters
+ * NEW Disabled Redundant and Unneeded Styles
+ * NEW Add Dasboard Menu Shaddow Removal
+ * NEW Add Bump CB Filter Removal
+ * NEW Add Personal User Related Options Removal
+ * UPDATED Class Removal
+ * UPDATED Plugin Description
  * Bump Version 2013 Build 0613 Revision 0448
 = 2011.1212.2011 =
 * Release [STABLE] Disable Frontend Admin Bar and ToolBar
