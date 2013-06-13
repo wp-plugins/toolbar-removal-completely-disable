@@ -1,4 +1,4 @@
-=== Disable WordPress ToolBar ===
+=== Disable Frontend Admin Bar and ToolBar ===
 Contributors: sLaNGjI
 Donate link: http://slangji.wordpress.com/donate/
 Tags: disable,WordPress,admin,bar,toolbar,frontend,sLa,sLaNGjI,sLaNGjIs,plugin,plugins
