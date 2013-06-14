@@ -47,12 +47,9 @@ To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for this clas
 1. Upload this plugin to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 = Before Installation =
-Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar
-1. when viewing site
-1. in dashboard
+Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar -> when viewing site -> in dashboard
 
-Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Toolbar
-1. Show Toolbar when viewing site
+Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Toolbar -> Show Toolbar when viewing site
 = Installation Trick =
 A neat trick is to put this single file (not its parent directory) in the wp-content/mu-plugins directory (create it if not exists) so you won't even have to enable it, it will be loaded by default.
 == Frequently Asked Questions ==
