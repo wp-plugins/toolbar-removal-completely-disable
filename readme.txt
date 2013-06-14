@@ -21,18 +21,18 @@ Features:
 1. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
 1. Add Header and Footer Log
 `
- * Less Plugin Memory Consumption.
- * Full Strict Security Rules Applied.
- * Handy Syntax Improvement.
- * Reduce Code Bloat.
- * Code Cleanup for faster loading.
- * Only one unique PHP file.
- * Supports PHP 4 and PHP 5.
- * Ready to Single and Network Multisite Environment.
- * Compatible with Shared, Dedicated, Cloud and VPS Hosting.
- * Run on Hosting with high and low resources.
- * Nothing is written into space disk.
- * Nothing is written into wp_option database table.
+* Less Plugin Memory Consumption.
+* Full Strict Security Rules Applied.
+* Handy Syntax Improvement.
+* Reduce Code Bloat.
+* Code Cleanup for faster loading.
+* Only one unique PHP file.
+* Supports PHP 4 and PHP 5.
+* Ready to Single and Network Multisite Environment.
+* Compatible with Shared, Dedicated, Cloud and VPS Hosting.
+* Run on Hosting with high and low resources.
+* Nothing is written into space disk.
+* Nothing is written into wp_option database table.
 `
 1. Compatible with: WordPress, bbPress, Buddypress.
 1. Unified Code to run with WordPress 3.1 to 3.6 or later
