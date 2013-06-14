@@ -1,4 +1,4 @@
-=== √ Disable Admin Bar and ToolBar ===
+=== √ Disable Admin Bar ToolBar and more ... ===
 Contributors: sLaNGjI
 Donate link: http://slangji.wordpress.com/donate/
 Tags: disable,wordpress,admin,bar,toolbar,frontend,backend,bumpcb,pointer,shaddow,sLa,plugin
@@ -146,11 +146,11 @@ is very suggested upgrade to the latest build always!`
 = Development Status =
 Developmental Code in Becoming!
 = Common Rules =
- * Compatible with: WordPress, bbPress, Buddypress.
- * Unified Code to run with WordPress 3.1 to 3.6 or later
- * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
- * Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
- * Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+√ Compatible with: WordPress, bbPress, Buddypress.
+√ Unified Code to run with WordPress 3.1 to 3.6 or later
+√ Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+√ Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+√ Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
 = 2013.0614.0000 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Remove Backend DashBoard User Option "Show Admin Bar/Toolbar" Choice
