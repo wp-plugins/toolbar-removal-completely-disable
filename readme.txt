@@ -2,7 +2,7 @@
 Contributors: sLaNGjI
 Donate link: http://slangji.wordpress.com/donate/
 Tags: disable,wordpress,admin,bar,toolbar,frontend,backend,bumpcb,pointer,shaddow,sLa,plugin
-Stable tag: 2013.0613.0448
+Stable tag: 2013.0614.0504
 Requires at least: 3.1
 Tested up to: 3.6
 License: GPLv2 or later
@@ -151,13 +151,13 @@ Unified Code to run with WordPress 3.1 to 3.6 or later
 Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
 Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
-= 2013.0614.0000 =
+= 2013.0614.0504 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Remove Backend DashBoard User Option "Show Admin Bar/Toolbar" Choice
  * NEW Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
  * UPDATED Code Cleanup
  * UPDATED Handy Syntax
- * Bump Version 2013 Build 0614 Revision 0000
+ * Bump Version 2013 Build 0614 Revision 0504
 = 2013.0613.0448 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Remove Frontend Bump CB
@@ -190,7 +190,7 @@ Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guid
  * Nothing is written into wp_option database table.
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
-= 2013.0614.0000 =
+= 2013.0614.0504 =
 * Release [STABLE] Remove Backend DashBoard User Option Admin Bar/Toolbar Choice. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later.
 = 2013.0613.0448 =
 * Release [STABLE] Remove: Frontend Bump CB, Backend DashBoard Admin Menu Shaddow Effect, Backend DashBoard Admin Menu Pointers Function, Backend "gap" on top of Admin DashBoard for WP 3.3+ or later. Add: Header and Footer Log.
