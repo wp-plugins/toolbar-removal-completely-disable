@@ -122,11 +122,6 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		}
 	add_action('admin_print_styles', 'wptrcd_rbwog', 21);
 
-	/**
-	 * This Function not work with WP 3.1+ and WP 3.2+
-	 * It was modified and revidsed!
-	 * Default: Disabled ...
-	 */
 	function wptrcd_ablhdr()
 		{
 ?>
@@ -162,7 +157,13 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 </div></td><td width="8"></td></tr></table>
 <?php
 		}
-	//add_action( 'in_admin_header', 'wptrcd_ablhdr' );	
+
+	global $wp_version;
+
+	if ( $wp_version >= 3.3 )
+		{
+			add_action( 'in_admin_header', 'wptrcd_ablhdr' );
+		}
 
 	function wp_admin_tool_bar_init()
 		{
