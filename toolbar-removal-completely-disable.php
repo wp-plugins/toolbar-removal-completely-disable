@@ -167,6 +167,18 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	function wp_admin_tool_bar_init()
 		{
+
+			global $wp_version;
+
+			if ( $wp_version >= 3.1 )
+				{
+
+					if ( $wp_version < 3.3 )
+						{
+							add_filter( 'show_admin_bar', '__return_false' );
+						}
+				}
+
 			add_filter( 'wp_admin_bar_class', '__return_false' );
 			add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
 		}
