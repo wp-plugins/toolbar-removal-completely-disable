@@ -7,40 +7,41 @@ Requires at least: 3.1
 Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-&#9733;&#9733;&#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar (or later) Bump CB, Shaddow Effect, Pointers, User Options. Add Logout.
+&#9733;&#9733;&#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar (or later) Bump CB, Shaddow Effect, Pointers.
 == Description ==
-Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Bump CB, Shaddow Effect, Pointers, User Options, without loosing Logout functionality! This is only a "basic" removal. For "full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal?</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal?</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal?</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal?</a>
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Bump CB, Shaddow Effect, Pointers (tooltips) User Options, without loosing Logout functionality! This is only a "basic" removal. For "full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal?</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal?</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal?</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal?</a>
 
-Features:
+= Features =
 
 1. Remove Frontend Bump CB
 1. Remove Backend DashBoard Admin Menu Shaddow Effect
-1. Remove Backend DashBoard Admin Menu Pointers Function
+1. Remove Backend DashBoard Admin Menu Pointers (tooltips) Function
 1. Remove Backend "gap" on top of Admin DashBoard for WP 3.3+ or later
 1. Remove Backend DashBoard User Option "Show Admin Bar/Toolbar" Choice
 1. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
 1. Add Header and Footer Log
 `
-* Less Plugin Memory Consumption.
-* Full Strict Security Rules Applied.
-* Handy Syntax Improvement.
-* Reduce Code Bloat.
-* Code Cleanup for faster loading.
-* Only one unique PHP file.
-* Supports PHP 4 and PHP 5.
-* Ready to Single and Network Multisite Environment.
-* Compatible with Shared, Dedicated, Cloud and VPS Hosting.
-* Run on Hosting with high and low resources.
-* Nothing is written into space disk.
-* Nothing is written into wp_option database table.
+√ Less Plugin Memory Consumption.
+√ Full Strict Security Rules Applied.
+√ Handy Syntax Improvement.
+√ Reduce Code Bloat.
+√ Code Cleanup for faster loading.
+√ Only one unique PHP file.
+√ Supports PHP 4 and PHP 5.
+√ Ready to Single and Network Multisite Environment.
+√ Compatible with Shared, Dedicated, Cloud and VPS Hosting.
+√ Run on Hosting with high and low resources.
+√ Nothing is written into space disk.
+√ Nothing is written into wp_option database table.
 `
+= Rules =
 1. Compatible with: WordPress, bbPress, Buddypress.
 1. Unified Code to run with WordPress 3.1 to 3.6 or later
 1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
 1. Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
 = Thanks =
-Greetings to [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for this class trick: add_filter( 'wp_admin_bar_class', '__return_false' );
+To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for this class trick: add_filter( 'wp_admin_bar_class', '__return_false' );
 == Installation ==
 = Plugin Installation =
 1. Upload this plugin to the `/wp-content/plugins/` directory
@@ -48,7 +49,7 @@ Greetings to [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for
 = Installation Trick =
 A neat trick is to put this single file (not its parent directory) in the wp-content/mu-plugins directory (create it if not exists) so you won't even have to enable it, it will be loaded by default.
 == Frequently Asked Questions ==
-= [Goodbye Admin Bar, Hello Toolbar](http://digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/) =
+[Goodbye Admin Bar, Hello Toolbar](http://digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/)
 Posted on: January 13, 2012 by Jeff Starr
 
 When the Admin Bar hit the streets in WordPress 3.1, people seemed to either love it or hate it. And rightly so, it was a significant change in the appearance of the WP Admin area, and if not disabled in your User Profile, the front-end of your site as well. Many tips, tricks and plugins for customizing the Admin Bar began appearing around the Web. And then just as the dust began to settle, BAM — the “Admin Bar” transforms into the “Toolbar” with the WordPress 3.3 update.
@@ -106,7 +107,6 @@ To be continued..
 Without a doubt things will continue to change, and it’ll be fun watching as WordPress continues to evolve, Toolbar and all :)
 
 = A brief Markdown Example =
-
 Ordered list:
 
 1. Some feature
@@ -132,16 +132,20 @@ Markdown uses email style notation for blockquotes and I've been told:
 == Screenshots ==
 = Plugin Screenshots =
 [ The 'old' WP Admin Bar ]
-Admin Bar: bigger, clunkier, and redundant
+
+1. Admin Bar: bigger, clunkier, and redundant
 
 [ The 'new' WP Toolbar ]
-Toolbar: smaller, simpler, and required
+
+2. Toolbar: smaller, simpler, and required
 
 [ The 'old' WP Admin Bar ]
-User Profile settings for the old Admin Bar: full control
+
+3. User Profile settings for the old Admin Bar: full control
 
 [ The 'new' WP Toolbar ]
-User Profile settings for the Toolbar: bamboozled! No option to disable for back-end
+
+4. User Profile settings for the Toolbar: bamboozled! No option to disable for back-end
 == Changelog ==
 = Disclaimer =
 `All previous release, prior of latest stable, are on fact
@@ -149,7 +153,7 @@ deprecated, and no longer supported on this project:
 is very suggested upgrade to the latest build always!`
 = Development Status =
 Developmental Code in Becoming!
-= Common Features =
+= Common Rules =
  * Compatible with: WordPress, bbPress, Buddypress.
  * Unified Code to run with WordPress 3.1 to 3.6 or later
  * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
@@ -166,7 +170,7 @@ Developmental Code in Becoming!
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Remove Frontend Bump CB
  * NEW Remove Backend DashBoard Admin Menu Shaddow Effect
- * NEW Remove Backend DashBoard Admin Menu Pointers Function
+ * NEW Remove Backend DashBoard Admin Menu Pointers (tooltips) Function
  * NEW Remove Backend "gap" on top of Admin DashBoard for WP 3.3+ or later
  * NEW Add Header and Footer Log
  * UPDATED Class Removal
