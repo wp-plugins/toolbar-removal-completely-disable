@@ -49,8 +49,7 @@ To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for this clas
 = Installation Trick =
 A neat trick is to put this single file (not its parent directory) in the wp-content/mu-plugins directory (create it if not exists) so you won't even have to enable it, it will be loaded by default.
 == Frequently Asked Questions ==
-[Goodbye Admin Bar, Hello Toolbar](http://digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/)
-Posted on: January 13, 2012 by Jeff Starr
+[Goodbye Admin Bar, Hello Toolbar](http://digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/) Posted on: January 13, 2012 by Jeff Starr
 
 When the Admin Bar hit the streets in WordPress 3.1, people seemed to either love it or hate it. And rightly so, it was a significant change in the appearance of the WP Admin area, and if not disabled in your User Profile, the front-end of your site as well. Many tips, tricks and plugins for customizing the Admin Bar began appearing around the Web. And then just as the dust began to settle, BAM — the “Admin Bar” transforms into the “Toolbar” with the WordPress 3.3 update.
 
@@ -131,21 +130,14 @@ Markdown uses email style notation for blockquotes and I've been told:
 `<?php code(); // goes in backticks ?>`
 == Screenshots ==
 = Plugin Screenshots =
-[ The 'old' WP Admin Bar ]
-
-1. Admin Bar: bigger, clunkier, and redundant
-
-[ The 'new' WP Toolbar ]
-
-2. Toolbar: smaller, simpler, and required
-
-[ The 'old' WP Admin Bar ]
-
-3. User Profile settings for the old Admin Bar: full control
-
-[ The 'new' WP Toolbar ]
-
-4. User Profile settings for the Toolbar: bamboozled! No option to disable for back-end
+1. [ The 'old' WP Admin Bar ]
+Admin Bar: bigger, clunkier, and redundant
+2. [ The 'new' WP Toolbar ]
+Toolbar: smaller, simpler, and required
+3. [ The 'old' WP Admin Bar ]
+User Profile settings for the old Admin Bar: full control
+4. [ The 'new' WP Toolbar ]
+User Profile settings for the Toolbar: bamboozled! No option to disable for back-end
 == Changelog ==
 = Disclaimer =
 `All previous release, prior of latest stable, are on fact
