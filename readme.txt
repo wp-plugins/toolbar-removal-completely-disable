@@ -146,11 +146,11 @@ is very suggested upgrade to the latest build always!`
 = Development Status =
 Developmental Code in Becoming!
 = Common Rules =
-Compatible with: WordPress, bbPress, Buddypress.
-Unified Code to run with WordPress 3.1 to 3.6 or later
-Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
-Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+1. Compatible with: WordPress, bbPress, Buddypress.
+1. Unified Code to run with WordPress 3.1 to 3.6 or later
+1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+1. Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
 = 2013.0614.0504 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Remove Backend DashBoard User Option "Show Admin Bar/Toolbar" Choice
