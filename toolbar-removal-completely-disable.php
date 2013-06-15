@@ -3,8 +3,8 @@
 /*
 Plugin Name: √ Disable Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: &#9733;&#9733;&#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar. This is only a "basic" removal. For "full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU Style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements. | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a> | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a>
-Version: 2013.0614.0504
+Description: &#9733;&#9733;&#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar. This is only a "basic" removal. For "full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed <a href="http://wordpress.org/extend/plugins/about/guidelines/Plugin" title"This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a> | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a>
+Version: 2013.0615.0936
 Author: sLa
 Author URI: http://slangji.wordpress.com/
 Requires at least: 3.1
@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
- * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) - Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar.
+ * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) - Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar.
  *
  * Please Noted That:
  * For Completely Backend Removal is needed on WordPress 3.1+ (or later) [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
@@ -75,7 +75,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * √ THANKS
- * Greetings to [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for this class trick: add_filter( 'wp_admin_bar_class', '__return_false' );
+ * To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for class trick ;)
  */
 
 	/**
@@ -84,7 +84,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	 * @description Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
 	 * @since 3.1.0
 	 * @tested 3.6.0
-	 * @version 2013.0614.0504
+	 * @version 2013.0615.0936
 	 * @status STABLE release
 	 * @author sLa
 	 * @license GPLv2 or later
@@ -114,13 +114,13 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		{
 			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
 		}
-	add_action('admin_head', 'wptrcd_rbmse');
+	add_action( 'admin_head', 'wptrcd_rbmse' );
 	
 	function wptrcd_rbwog()
 		{
 			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
 		}
-	add_action('admin_print_styles', 'wptrcd_rbwog', 21);
+	add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
 
 	function wptrcd_ablhdr()
 		{
@@ -167,11 +167,11 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	function wp_admin_tool_bar_init()
 		{
-
 			global $wp_version;
 
 			if ( $wp_version >= 3.1 )
 				{
+					global $wp_version;
 
 					if ( $wp_version < 3.3 )
 						{
@@ -188,11 +188,11 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		{
 			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
 		}
-	add_action('admin_print_styles-profile.php', 'wptrcd_ruppoabpc');
+	add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
 
 	function wptrcd_hflog()
 		{
-			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0614.0504 Active-->\n\n";
+			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - State of the Art?-->\n\n";
 		}
 	add_action( 'wp_head', 'wptrcd_hflog' );
 	add_action( 'wp_footer', 'wptrcd_hflog' );
