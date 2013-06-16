@@ -3,7 +3,7 @@
 /*
 Plugin Name: √ Disable Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: &#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar. This is only a "basic" removal. For "full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On and <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed <a href="http://wordpress.org/extend/plugins/about/guidelines/Plugin" title"This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a> | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a>
+Description: &#9733;&#9733;&#9733; Disable WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar. This is only a "Basic" removal. For "Full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed <a href="http://wordpress.org/extend/plugins/about/guidelines/Plugin" title"This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a> | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a>
 Version: 2013.0615.0936
 Author: sLa
 Author URI: http://slangji.wordpress.com/
@@ -101,15 +101,6 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 				exit();
 		}
 
-	function wptrcd_rbbcb()
-		{
-			if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
-				{
-					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
-				}
-		}
-	add_filter('wp_head', 'wptrcd_rbbcb', 1);
-
 	function wptrcd_rbmse()
 		{
 			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
@@ -164,6 +155,15 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		{
 			add_action( 'in_admin_header', 'wptrcd_ablhdr' );
 		}
+
+	function wptrcd_rbbcb()
+		{
+			if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
+				{
+					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
+				}
+		}
+	add_filter('wp_head', 'wptrcd_rbbcb', 1);
 
 	function wp_admin_tool_bar_init()
 		{
