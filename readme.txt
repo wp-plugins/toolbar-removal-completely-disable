@@ -22,7 +22,7 @@ Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or late
 1. Remove Backend User Personal Options "Show Admin Bar/Toolbar"
 1. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
 1. Add Header and Footer Log
-1. Show realtime datetime on top of DashBoard
+1. Show realtime datetime on top of DashBoard for WP 3.3+ or later
 `
 √ Less Plugin Memory Consumption.
 √ Full Strict Security Rules Applied.
@@ -160,7 +160,7 @@ Developmental Code in Becoming!
 1. Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar
- * NEW Add sLa_pcl function to show realtime datetime on top of DashBoard
+ * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
  * UPDATED Cleaning of GNU style code indentation
  * Bump Version 2013 Build 0615 Revision 0933
 = 2013.0614.0504 =
@@ -203,7 +203,7 @@ Developmental Code in Becoming!
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
 = 2013.0615.0936 =
-* Release [STABLE] Add sLa_pcl function to show realtime datetime on top of DashBoard
+* Release [STABLE] Add sLa_pcl function to show realtime datetime on top of DashBoard for WP 3.3+ or later
 = 2013.0614.0504 =
 * Release [STABLE] Remove Backend DashBoard User Option Admin Bar/Toolbar Choice. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later.
 = 2013.0613.0448 =
