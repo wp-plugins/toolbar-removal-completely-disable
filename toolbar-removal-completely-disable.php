@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
- * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) - Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar.
+ * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) - Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar
  *
  * Please Noted That:
  * For Completely Backend Removal is needed on WordPress 3.1+ (or later) [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
@@ -79,7 +79,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  */
 
 	/**
-	 * @package Disable Admin Bar and ToolBar
+	 * @package Disable Admin Bar and ToolBar (State of The Art Plugin ?)
 	 * @subpackage WordPress PlugIn
 	 * @description Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
 	 * @since 3.1.0
@@ -89,6 +89,9 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	 * @author sLa
 	 * @license GPLv2 or later
 	 * @indentation GNU style
+	 * @keybit 
+	 * @keysum 
+	 * @keytag 74be16979710d4c4e7c6647856088456
 	 */
 
 		if ( !function_exists( 'add_action' ) )
@@ -131,11 +134,17 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 <div style="padding-top:2px">
 <?php
 
-		if(function_exists('sLa_pml')){echo (sLa_pml() . 'M - ');};
+		if ( function_exists( 'sLa_pml' ) )
+			{
+				echo (sLa_pml() . 'M - ');
+			}
 
-		if(function_exists('sLa_pcl')){echo (sLa_pcl() . ' - ');};
+		if ( function_exists( 'sLa_pcl' ) )
+			{
+				echo (sLa_pcl() . ' - ');
+			}
 
-		echo date('l j F Y @ H:i');
+		echo date( 'l j F Y @ H:i' );
 
 		wp_get_current_user();
 
@@ -154,7 +163,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 					}
 				else
 					{
-						echo ' | <a href="' . get_dashboard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
+						echo ' | <a href="' . get_Dashboard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
 					}
 			}
 
@@ -202,8 +211,8 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 					}
 					add_filter( 'wp_admin_bar_class', '__return_false' );
 					add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
-		}
-		add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
+			}
+			add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
 
 		function wptrcd_ruppoabpc()
 			{
@@ -213,7 +222,8 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 		function wptrcd_hflog()
 			{
-				echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - State of the Art?-->\n\n";
+				echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag: ".md5(md5("".""))."-->\n";
+				echo "\n<!--This Site is Optimized to Speedup Dashboard and Minimize Memory Load Consumption by sLa-->\n\n";
 			}
 			add_action( 'wp_head', 'wptrcd_hflog' );
 			add_action( 'wp_footer', 'wptrcd_hflog' );
