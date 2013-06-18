@@ -223,7 +223,28 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		function wptrcd_hflog()
 			{
 				echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag: ".md5(md5("".""))."-->\n";
-				echo "\n<!--This Site is Optimized to Speedup Dashboard and Minimize Memory Load Consumption by sLa-->\n\n";
+				echo "\n<!--This Site is Optimized to Speedup Dashboard and Minimize Memory Load Consumption";
+
+				global $wp_version;
+
+				if ( $wp_version >= 3.3 )
+							{
+								echo " with ToolBar Disabled";
+							}
+
+				global $wp_version;
+
+				if ( $wp_version >= 3.1 )
+					{
+						global $wp_version;
+
+						if ( $wp_version < 3.3 )
+							{
+								echo " with Admin Bar Disabled";
+							}
+					}							
+
+				echo "-->\n\n";
 			}
 			add_action( 'wp_head', 'wptrcd_hflog' );
 			add_action( 'wp_footer', 'wptrcd_hflog' );
