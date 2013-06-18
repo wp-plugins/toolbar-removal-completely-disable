@@ -91,110 +91,131 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	 * @indentation GNU style
 	 */
 
-	if ( !function_exists( 'add_action' ) )
-		{
-			header( 'HTTP/0.9 403 Forbidden' );
-			header( 'HTTP/1.0 403 Forbidden' );
-			header( 'HTTP/1.1 403 Forbidden' );
-			header( 'Status: 403 Forbidden' );
-			header( 'Connection: Close' );
-				exit();
-		}
+		if ( !function_exists( 'add_action' ) )
+			{
+				header( 'HTTP/0.9 403 Forbidden' );
+				header( 'HTTP/1.0 403 Forbidden' );
+				header( 'HTTP/1.1 403 Forbidden' );
+				header( 'Status: 403 Forbidden' );
+				header( 'Connection: Close' );
+					exit();
+			}
 
-	function wptrcd_rbmse()
-		{
-			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
-		}
-	add_action( 'admin_head', 'wptrcd_rbmse' );
+		function wptrcd_rbmse()
+			{
+				echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
+			}
+			add_action( 'admin_head', 'wptrcd_rbmse' );
 	
-	function wptrcd_rbwog()
-		{
-			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
-		}
-	add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
+		function wptrcd_rbwog()
+			{
+				echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
+			}
+			add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
 
-	function wptrcd_ablhdr()
-		{
+		function wptrcd_ablhdr()
+			{
+
 ?>
-<style type="text/css">table#wptbr td#wptbr_ttl a:link,table#wptbr td#wptbr_ttl a:visited{text-decoration:none}table#wptbr td#wptbr_lgt,table#wptbr td#wptbr_lgt a{text-decoration:none}</style><table style="margin-left:6px;float:left;z-index:100;position:relative;left:0px;top:0px;background:none;padding:0px;border:0px;border-bottom:1px solid #DFDFDF" id="wptbr" border=0 cols=4 width="97%" height="33"><tr><td align=left valign=center id="wptbr_ttl">
+<style type="text/css">table#wptbr td#wptbr_ttl a:link,table#wptbr td#wptbr_ttl a:visited{text-decoration:none}table#wptbr td#wptbr_lgt,table#wptbr td#wptbr_lgt a{text-decoration:none}</style>
+<table style="margin-left:6px;float:left;z-index:100;position:relative;left:0px;top:0px;background:none;padding:0px;border:0px;border-bottom:1px solid #DFDFDF" id="wptbr" border="0" cols="4" width="97%" height="33">
+<tr>
+<td align="left" valign="center" id="wptbr_ttl">
 <?php
-			echo '<a href="' . home_url() . '">' . __(get_bloginfo()) . '</a>';
+
+		echo '<a href="' . home_url() . '">' . __( get_bloginfo() ) . '</a>';
+
 ?>
-</td><td align=right valign=center id="wptbr_lgt"><div style="padding-top:2px">
-<?php if(function_exists('sLa_pml')){echo (sLa_pml() . 'M - ');}?> <?php if(function_exists('sLa_pcl')){echo (sLa_pcl() . ' | ');}?> <?php echo date('l j F Y @ H:i')?>
+</td>
+<td align="right" valign="center" id="wptbr_lgt">
+<div style="padding-top:2px">
 <?php
-			wp_get_current_user();
-			$current_user = wp_get_current_user();
-			if (!($current_user instanceof WP_User))
-					return;
-			echo ' | ' . $current_user->display_name . '';
+
+		if(function_exists('sLa_pml')){echo (sLa_pml() . 'M - ');};
+
+		if(function_exists('sLa_pcl')){echo (sLa_pcl() . ' - ');};
+
+		echo date('l j F Y @ H:i');
+
+		wp_get_current_user();
+
+		$current_user = wp_get_current_user();
+
+		if ( !( $current_user instanceof WP_User ) )
+			return;
+
+		echo ' | ' . $current_user->display_name . '';
+
+		if ( is_multisite() && is_super_admin() )
+			{
+				if ( !is_network_admin() )
+					{
+						echo ' | <a href="' . network_admin_url() . '">' . __( 'Network Admin' ) . '</a>';
+					}
+				else
+					{
+						echo ' | <a href="' . get_dashboard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
+					}
+			}
+
+		echo ' | <a href="' . wp_logout_url( home_url() ) . '">' . __( 'Log Out' ) . '</a>';
+
 ?>
+</div>
+</td>
+<td width="8">
+</td>
+</tr>
+</table>
 <?php
-			if (is_multisite() && is_super_admin())
-				{
-					if (!is_network_admin())
-						{
-							echo ' | <a href="' . network_admin_url() . '">' . __('Network Admin') . '</a>';
-						}
-					else
-						{
-							echo ' | <a href="' . get_dashboard_url(get_current_user_id()) . '">' . __('Site Admin') . '</a>';
-						}
-				}
-?>
-<?php
-			echo ' | <a href="' . wp_logout_url(home_url()) . '">' . __('Log Out') . '</a>';
-?>
-</div></td><td width="8"></td></tr></table>
-<?php
+
+			}
+
+		global $wp_version;
+
+		if ( $wp_version >= 3.3 )
+			{
+				add_action( 'in_admin_header', 'wptrcd_ablhdr' );
+			}
+
+		function wptrcd_rbbcb()
+			{
+				if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
+					{
+						remove_filter( 'wp_head', '_admin_bar_bump_cb' );
+					}
+			}
+			add_filter( 'wp_head', 'wptrcd_rbbcb', 1 );
+
+		function wp_admin_tool_bar_init()
+			{
+				global $wp_version;
+
+				if ( $wp_version >= 3.1 )
+					{
+						global $wp_version;
+
+						if ( $wp_version < 3.3 )
+							{
+								add_filter( 'show_admin_bar', '__return_false' );
+							}
+					}
+					add_filter( 'wp_admin_bar_class', '__return_false' );
+					add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
 		}
+		add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
 
-	global $wp_version;
+		function wptrcd_ruppoabpc()
+			{
+				echo '<style type="text/css">.show-admin-bar{display:none}</style>';
+			}
+			add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
 
-	if ( $wp_version >= 3.3 )
-		{
-			add_action( 'in_admin_header', 'wptrcd_ablhdr' );
-		}
-
-	function wptrcd_rbbcb()
-		{
-			if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
-				{
-					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
-				}
-		}
-	add_filter('wp_head', 'wptrcd_rbbcb', 1);
-
-	function wp_admin_tool_bar_init()
-		{
-			global $wp_version;
-
-			if ( $wp_version >= 3.1 )
-				{
-					global $wp_version;
-
-					if ( $wp_version < 3.3 )
-						{
-							add_filter( 'show_admin_bar', '__return_false' );
-						}
-				}
-
-			add_filter( 'wp_admin_bar_class', '__return_false' );
-			add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
-		}
-	add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
-
-	function wptrcd_ruppoabpc()
-		{
-			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
-		}
-	add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
-
-	function wptrcd_hflog()
-		{
-			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - State of the Art?-->\n\n";
-		}
-	add_action( 'wp_head', 'wptrcd_hflog' );
-	add_action( 'wp_footer', 'wptrcd_hflog' );
+		function wptrcd_hflog()
+			{
+				echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - State of the Art?-->\n\n";
+			}
+			add_action( 'wp_head', 'wptrcd_hflog' );
+			add_action( 'wp_footer', 'wptrcd_hflog' );
 
 ?>
