@@ -145,14 +145,10 @@ Markdown uses email style notation for blockquotes and I've been told:
 `<?php code(); // goes in backticks ?>`
 == Screenshots ==
 = Plugin Screenshots =
-1. [ The 'old' WP Admin Bar ]
-Admin Bar: bigger, clunkier, and redundant
-2. [ The 'new' WP Toolbar ]
-Toolbar: smaller, simpler, and required
-3. [ The 'old' WP Admin Bar ]
-User Profile settings for the old Admin Bar: full control
-4. [ The 'new' WP Toolbar ]
-User Profile settings for the Toolbar: bamboozled! No option to disable for back-end
+1. The 'old' WP Admin Bar: bigger, clunkier, and redundant ...
+2. The 'new' WP ToolBar: smaller, simpler, and bamboozled! No option to disable for back-end!
+3. The 'old' WP Admin Bar User Profile Settings: full control ...
+4. The 'new' WP ToolBar User Profile Settings: bamboozled! No option to disable for back-end!
 == Changelog ==
 = Disclaimer =
 `All previous release, prior of latest stable, are on fact
