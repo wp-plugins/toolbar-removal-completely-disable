@@ -58,7 +58,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * one-click-logout-barless.php by olyma <rackofpower.com>
  * Copyright (C) 2011 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
- * wp-toolbar-removal-node-addon by sLa <slangji[at]gmail[dot]com>
+ * wp-toolbar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
  * Copyright (C) 2012-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later)
@@ -133,37 +133,37 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	 * @keytag 74be16979710d4c4e7c6647856088456
 	 */
 
-		if ( !function_exists( 'add_action' ) )
-			{
-				header( 'HTTP/0.9 403 Forbidden' );
-				header( 'HTTP/1.0 403 Forbidden' );
-				header( 'HTTP/1.1 403 Forbidden' );
-				header( 'Status: 403 Forbidden' );
-				header( 'Connection: Close' );
-					exit();
-			}
+	if ( !function_exists( 'add_action' ) )
+		{
+			header( 'HTTP/0.9 403 Forbidden' );
+			header( 'HTTP/1.0 403 Forbidden' );
+			header( 'HTTP/1.1 403 Forbidden' );
+			header( 'Status: 403 Forbidden' );
+			header( 'Connection: Close' );
+				exit();
+		}
 
-			global $wp_version;
+	global $wp_version;
 
-			if ( $wp_version < 3.1 )
-				{
-					wp_die( __( 'This plugin requires WordPress 3.1+ or greater.' ) );
-				}
+	if ( $wp_version < 3.1 )
+		{
+			wp_die( __( 'This plugin requires WordPress 3.1+ or greater.' ) );
+		}
 
-		function wptrcd_rbmse()
-			{
-				echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
-			}
-			add_action( 'admin_head', 'wptrcd_rbmse' );
+	function wptrcd_rbmse()
+		{
+			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
+		}
+		add_action( 'admin_head', 'wptrcd_rbmse' );
 
-		function wptrcd_rbwog()
-			{
-				echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
-			}
-			add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
+	function wptrcd_rbwog()
+		{
+			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
+		}
+		add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
 
-		function wptrcd_ablhdr()
-			{
+	function wptrcd_ablhdr()
+		{
 
 ?>
 <style type="text/css">table#wptbr td#wptbr_ttl a:link,table#wptbr td#wptbr_ttl a:visited{text-decoration:none}table#wptbr td#wptbr_lgt,table#wptbr td#wptbr_lgt a{text-decoration:none}</style>
@@ -172,7 +172,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 <td align="left" valign="center" id="wptbr_ttl">
 <?php
 
-		echo '<a href="' . home_url() . '">' . __( get_bloginfo() ) . '</a>';
+	echo '<a href="' . home_url() . '">' . __( get_bloginfo() ) . '</a>';
 
 ?>
 </td>
@@ -180,40 +180,40 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 <div style="padding-top:2px">
 <?php
 
-		if ( function_exists( 'sLa_pml' ) )
-			{
-				echo (sLa_pml() . 'M - ');
-			}
+	if ( function_exists( 'sLa_pml' ) )
+		{
+			echo ( sLa_pml() . 'M - ' );
+		}
 
-		if ( function_exists( 'sLa_pcl' ) )
-			{
-				echo (sLa_pcl() . ' - ');
-			}
+	if ( function_exists( 'sLa_pcl' ) )
+		{
+			echo ( sLa_pcl() . ' - ' );
+		}
 
-		echo date( 'l j F Y @ H:i' );
+	echo date( 'l j F Y @ H:i' );
 
-		wp_get_current_user();
+	wp_get_current_user();
 
-		$current_user = wp_get_current_user();
+	$current_user = wp_get_current_user();
 
-		if ( !( $current_user instanceof WP_User ) )
-			return;
+	if ( !( $current_user instanceof WP_User ) )
+		return;
 
-		echo ' | ' . $current_user->display_name . '';
+	echo ' | ' . $current_user->display_name . '';
 
-		if ( is_multisite() && is_super_admin() )
-			{
-				if ( !is_network_admin() )
-					{
-						echo ' | <a href="' . network_admin_url() . '">' . __( 'Network Admin' ) . '</a>';
-					}
-				else
-					{
-						echo ' | <a href="' . get_Dashboard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
-					}
-			}
+	if ( is_multisite() && is_super_admin() )
+		{
+			if ( !is_network_admin() )
+				{
+					echo ' | <a href="' . network_admin_url() . '">' . __( 'Network Admin' ) . '</a>';
+				}
+			else
+				{
+					echo ' | <a href="' . get_Dashboard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
+				}
+		}
 
-		echo ' | <a href="' . wp_logout_url( home_url() ) . '">' . __( 'Log Out' ) . '</a>';
+	echo ' | <a href="' . wp_logout_url( home_url() ) . '">' . __( 'Log Out' ) . '</a>';
 
 ?>
 </div>
@@ -224,75 +224,75 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 </table>
 <?php
 
-			}
+		}
 
-		global $wp_version;
+	global $wp_version;
 
-		if ( $wp_version >= 3.3 )
-			{
-				add_action( 'in_admin_header', 'wptrcd_ablhdr' );
-			}
+	if ( $wp_version >= 3.3 )
+		{
+			add_action( 'in_admin_header', 'wptrcd_ablhdr' );
+		}
 
-		function wptrcd_rbbcb()
-			{
-				if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
-					{
-						remove_filter( 'wp_head', '_admin_bar_bump_cb' );
-					}
-			}
-			add_filter( 'wp_head', 'wptrcd_rbbcb', 1 );
+	function wptrcd_rbbcb()
+		{
+			if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
+				{
+					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
+				}
+		}
+		add_filter( 'wp_head', 'wptrcd_rbbcb', 1 );
 
-		function wp_admin_tool_bar_init()
-			{
-				global $wp_version;
+	function wp_admin_tool_bar_init()
+		{
+			global $wp_version;
 
-				if ( $wp_version >= 3.1 )
-					{
-						global $wp_version;
+			if ( $wp_version >= 3.1 )
+				{
+					global $wp_version;
 
-						if ( $wp_version < 3.3 )
-							{
+					if ( $wp_version < 3.3 )
+						{
 								add_filter( 'show_admin_bar', '__return_false' );
-							}
-					}
-					add_filter( 'wp_admin_bar_class', '__return_false' );
-					add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
-			}
-			add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
+						}
+				}
+				add_filter( 'wp_admin_bar_class', '__return_false' );
+				add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
+		}
+		add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
 
-		function wptrcd_ruppoabpc()
-			{
-				echo '<style type="text/css">.show-admin-bar{display:none}</style>';
-			}
-			add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
+	function wptrcd_ruppoabpc()
+		{
+			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
+		}
+		add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
 
-		function wptrcd_hflog()
-			{
-				echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag: ".md5(md5("".""))."-->\n";
-				echo "\n<!--This Site is Optimized to Speedup Dashboard and Minimize Memory Load Consumption";
+	function wptrcd_hflog()
+		{
+			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag: ".md5(md5("".""))."-->\n";
+			echo "\n<!--This Site is Optimized to Speedup Dashboard and Minimize Memory Load Consumption";
 
-				global $wp_version;
+			global $wp_version;
 
-				if ( $wp_version >= 3.3 )
-							{
-								echo " with ToolBar Disabled";
-							}
+			if ( $wp_version >= 3.3 )
+				{
+					echo " with ToolBar Disabled";
+				}
 
-				global $wp_version;
+			global $wp_version;
 
-				if ( $wp_version >= 3.1 )
-					{
-						global $wp_version;
+			if ( $wp_version >= 3.1 )
+				{
+					global $wp_version;
 
-						if ( $wp_version < 3.3 )
-							{
-								echo " with Admin Bar Disabled";
-							}
-					}							
+					if ( $wp_version < 3.3 )
+						{
+							echo " with Admin Bar Disabled";
+						}
+				}							
 
-				echo "-->\n\n";
-			}
-			add_action( 'wp_head', 'wptrcd_hflog' );
-			add_action( 'wp_footer', 'wptrcd_hflog' );
+			echo "-->\n\n";
+		}
+		add_action( 'wp_head', 'wptrcd_hflog' );
+		add_action( 'wp_footer', 'wptrcd_hflog' );
 
 ?>
