@@ -7,9 +7,9 @@ Requires at least: 3.1
 Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-&#9733;&#9733;&#9733; Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar, Bump CB, Shaddow, Pointer, User Personal Options.
+&#9733;&#9733;&#9733; Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar, Bump CB, Admin Menu Shaddow Effect, Pointer (tooltips) User Personal Options.
 == Description ==
-Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, Bump CB, Shaddow Effect, Pointer (tooltips) User Personal Options, without loosing Logout functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>. 
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend Bump CB, Admin Menu Shaddow Effect, Pointer (tooltips) User Personal Options, without loosing Logout functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>. 
 
 On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and based on "Disable Admin Bar and ToolBar and more ..." plugin, and the Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" trasformed on standalone plugin, for node/group and more ... removal, only!
 
@@ -50,7 +50,7 @@ On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and
 1. Unified Code to run with WordPress 3.1 to 3.6 or later
 1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
 = Thanks =
 To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for class trick ;)
 == Installation ==
@@ -165,7 +165,7 @@ Developmental Code in Becoming!
 1. Unified Code to run with WordPress 3.1 to 3.6 or later
 1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Show realtime datetime on top of Dashboard for WP 3.3+ or later
@@ -253,7 +253,7 @@ The license for this software can be found on [Free Software Foundation](http://
 
 The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
 = Guidelines =
-This software meet [Detailed Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
+This software meet [Detailed Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
 
 The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
 = Coding =
@@ -261,6 +261,6 @@ This software implement [GNU style](http://www.gnu.org/prep/standards/standards.
 
 The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
 = Validation =
-This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/extend/plugins/about/validator/) directives.
+This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/plugins/about/validator/) directives.
 
 The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
