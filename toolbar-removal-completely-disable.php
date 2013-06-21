@@ -3,7 +3,7 @@
 /*
 Plugin Name: √ WP Disable Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar. This is only a "Basic" disabler. For "Full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed <a href="http://wordpress.org/plugins/about/guidelines/Plugin" title"This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a> | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a>
+Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar (unified code work with WP 3.1+ to 3.6+). This is only a "Basic" disabler. For "Full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed <a href="http://wordpress.org/plugins/about/guidelines/Plugin" title"This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a> | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a>
 Version: 2013.0615.0936
 Author: sLa
 Author URI: http://slangji.wordpress.com/
@@ -14,13 +14,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
- * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable (basic) WordPress 3.1+ Admin Bar and WordPress 3.3+ ToolBar
+ * Development Release: Version 2013 Build 0622-BUGFIX Revision 0000-DEVELOPMENTAL
  *
  * Please Noted That:
- * For Completely Backend Removal is needed on WordPress 3.1+ (or later) [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
+ * For Completely Backend Removal on WordPress 3.1+ (or later) is needed [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
  * Try also your Add-On [WP Admin Bar Removal Node](http://wordpress.org/plugins/wp-admin-bar-node-removal/)
- * For Completely Backend Removal is needed on WordPress 3.3+ (or later) [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
+ * For Completely Backend Removal on WordPress 3.3+ (or later) is needed [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
  * Try also your Add-On [WP ToolBar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
+ *
+ * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
  *
  * Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
  *
@@ -38,6 +40,21 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * along with this program; if not, see [GNU General Public Licenses](http://www.gnu.org/licenses/),
  * or write to the Free Software Foundation, Inc., 51 Franklin Street,
  * Fifth Floor, Boston, MA 02110-1301, USA.
+ *
+ * √ DISCLAIMER
+ *
+ * The license under which the WordPress software is released is the GPLv2 (or later) from the
+ * Free Software Foundation. A copy of the license is included with every copy of WordPress.
+ *
+ * Part of this license outlines requirements for derivative works, such as plugins or themes.
+ * Derivatives of WordPress code inherit the GPL license.
+ *
+ * There is some legal grey area regarding what is considered a derivative work, but we feel
+ * strongly that plugins and themes are derivative work and thus inherit the GPL license.
+ *
+ * The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html) and as license.txt into this plugin package.
+ *
+ * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * √ THERMS
  *
@@ -78,21 +95,6 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * Copyright (C) 2008-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
  * Copyright (C) 2011 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
- * √ DISCLAIMER
- *
- * The license under which the WordPress software is released is the GPLv2 (or later) from the
- * Free Software Foundation. A copy of the license is included with every copy of WordPress.
- *
- * Part of this license outlines requirements for derivative works, such as plugins or themes.
- * Derivatives of WordPress code inherit the GPL license.
- *
- * There is some legal grey area regarding what is considered a derivative work, but we feel
- * strongly that plugins and themes are derivative work and thus inherit the GPL license.
- *
- * The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html) and as license.txt into this plugin package.
- *
- * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
- *
  * √ VIOLATIONS
  *
  * [Violations of the GNU Licenses](http://www.gnu.org/licenses/gpl-violation.en.html)
@@ -114,6 +116,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * √ THANKS
+ * To [olyma](http://wordpress.org/plugins/one-click-logout-barless/)
  * To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for class trick ;)
  */
 
@@ -147,48 +150,37 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	if ( $wp_version < 3.1 )
 		{
-			wp_die( __( 'This plugin requires WordPress 3.1+ or greater.' ) );
+			wp_die( __( 'This Plugin Requires WordPress 3.1+ or Greater: Activation Stopped!' ) );
 		}
 
 	function wptrcd_rbmse()
 		{
-			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
+			echo '<style type="text/css">#adminmenuShaddow,#adminmenuback{background-image:none}</style>';
 		}
-		add_action( 'admin_head', 'wptrcd_rbmse' );
+	add_action( 'admin_head', 'wptrcd_rbmse' );
 
 	function wptrcd_rbwog()
 		{
 			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
 		}
-		add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
+	add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
 
-	function wptrcd_ablhdr()
+	function wptrcd_abtlhdr()
 		{
-
 ?>
-<style type="text/css">table#wptbr td#wptbr_ttl a:link,table#wptbr td#wptbr_ttl a:visited{text-decoration:none}table#wptbr td#wptbr_lgt,table#wptbr td#wptbr_lgt a{text-decoration:none}</style>
-<table style="margin-left:6px;float:left;z-index:100;position:relative;left:0px;top:0px;background:none;padding:0px;border:0px;border-bottom:1px solid #DFDFDF" id="wptbr" border="0" cols="4" width="97%" height="33">
+<style type="text/css">table#tbrcss td#tbrcss_ttl a:link,table#tbrcss td#tbrcss_ttl a:visited{text-decoration:none}table#tbrcss td#tbrcss_lgt,table#tbrcss td#tbrcss_lgt a{text-decoration:none}</style>
+<table style="margin-left:6px;float:left;z-index:100;position:relative;left:0px;top:0px;background:none;padding:0px;border:0px;border-bottom:1px solid #DFDFDF" id="tbrcss" border="0" cols="4" width="97%" height="33">
 <tr>
-<td align="left" valign="center" id="wptbr_ttl">
+<td align="left" valign="center" id="tbrcss_ttl">
 <?php
 
 	echo '<a href="' . home_url() . '">' . __( get_bloginfo() ) . '</a>';
 
 ?>
 </td>
-<td align="right" valign="center" id="wptbr_lgt">
+<td align="right" valign="center" id="tbrcss_lgt">
 <div style="padding-top:2px">
 <?php
-
-	if ( function_exists( 'sLa_pml' ) )
-		{
-			echo ( sLa_pml() . 'M - ' );
-		}
-
-	if ( function_exists( 'sLa_pcl' ) )
-		{
-			echo ( sLa_pcl() . ' - ' );
-		}
 
 	echo date( 'l j F Y @ H:i' );
 
@@ -209,7 +201,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 				}
 			else
 				{
-					echo ' | <a href="' . get_Dashboard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
+					echo ' | <a href="' . get_DashBoard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
 				}
 		}
 
@@ -223,14 +215,13 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 </tr>
 </table>
 <?php
-
 		}
 
 	global $wp_version;
 
 	if ( $wp_version >= 3.3 )
 		{
-			add_action( 'in_admin_header', 'wptrcd_ablhdr' );
+			add_action( 'in_admin_header', 'wptrcd_abtlhdr' );
 		}
 
 	function wptrcd_rbbcb()
@@ -240,9 +231,9 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
 				}
 		}
-		add_filter( 'wp_head', 'wptrcd_rbbcb', 1 );
+	add_filter( 'wp_head', 'wptrcd_rbbcb', 1 );
 
-	function wp_admin_tool_bar_init()
+	function wp_admin_bar_toolbar_init()
 		{
 			global $wp_version;
 
@@ -252,13 +243,13 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 					if ( $wp_version < 3.3 )
 						{
-								add_filter( 'show_admin_bar', '__return_false' );
+							add_filter( 'show_admin_bar', '__return_false' );
 						}
 				}
-				add_filter( 'wp_admin_bar_class', '__return_false' );
-				add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
+			add_filter( 'wp_admin_bar_class', '__return_false' );
+			add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
 		}
-		add_filter( 'init', 'wp_admin_tool_bar_init', 9 );
+	add_filter( 'init', 'wp_admin_bar_toolbar_init', 9 );
 
 	function wptrcd_ruppoabpc()
 		{
@@ -266,10 +257,10 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		}
 		add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
 
-	function wptrcd_hflog()
+	function wptrcd_hflg()
 		{
 			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag: ".md5(md5("".""))."-->\n";
-			echo "\n<!--This Site is Optimized to Speedup Dashboard and Minimize Memory Load Consumption";
+			echo "\n<!--This Site is Optimized to Speedup DashBoard and Minimize Memory Load Consumption";
 
 			global $wp_version;
 
@@ -288,11 +279,11 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 						{
 							echo " with Admin Bar Disabled";
 						}
-				}							
+				}
 
 			echo "-->\n\n";
 		}
-		add_action( 'wp_head', 'wptrcd_hflog' );
-		add_action( 'wp_footer', 'wptrcd_hflog' );
+	add_action( 'wp_head', 'wptrcd_hflg' );
+	add_action( 'wp_footer', 'wptrcd_hflg' );
 
 ?>
