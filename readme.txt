@@ -1,15 +1,15 @@
 === √ Disable Admin Bar and ToolBar and more ... ===
 Contributors: sLaNGjI
 Donate link: http://slangji.wordpress.com/donate/
-Tags: adminbar,backend,bumpcb,disable,frontend,plugin,pointer,shaddow,sLa,sLaNGjI,Toolbar,wordpress
+Tags: adminbar,backend,bumpcb,DashBoard,disable,frontend,pointer,remove,Shaddow,sLa,sLaNGjI,toolbar
 Stable tag: 2013.0615.0936
 Requires at least: 3.1
 Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-&#9733;&#9733;&#9733; Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar, Bump CB, Admin Menu Shaddow Effect, Pointer (tooltips) User Personal Options.
+&#9733;&#9733;&#9733; Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar, Bump CB, Menu Shaddow Effect, Pointer (ToolTips) User Personal Options.
 == Description ==
-Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend Bump CB, Admin Menu Shaddow Effect, Pointer (tooltips) User Personal Options, without loosing Logout functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top Dasboard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top Dasboard Links Alone">ToolBar Node Removal</a>. 
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend Bump CB, Admin Menu Shaddow Effect, Admin Bar and ToolBar Pointer (ToolTips) User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. 
 
 On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and based on "Disable Admin Bar and ToolBar and more ..." plugin, and the Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" trasformed on standalone plugin, for node/group and more ... removal, only!
 
@@ -18,17 +18,18 @@ On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and
 1. Disable WordPress 3.1+ (or later) Admin Bar
 1. Disable WordPress 3.3+ (or later) ToolBar
 1. Disable Frontend Bump CB
-1. Disable Backend Dashboard Admin Menu Shaddow Effect
-1. Disable Backend Dashboard Admin Menu Pointer (tooltips) Function
-1. Disable Backend "gap" on top of Admin Dashboard for WP 3.3+ or later
-1. Disable Backend User Personal Options "Show Admin Bar/Toolbar"
-1. Add logout functionality on top of Admin Dashboard for WP 3.3+ or later
+1. Disable Frontend "28px gap" on top of Site Home Page
+1. Disable Backend DashBoard Admin Menu Shaddow Effect
+1. Disable Backend DashBoard Admin Bar/ToolBar Pointer (ToolTips)
+1. Disable Backend "28px gap" on top of Admin DashBoard for WP 3.3+ or later
+1. Disable User Personal Options Settings "Show Admin Bar/Toolbar"
+1. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
 1. Add Header and Footer Log
-1. Show realtime datetime on top of Dashboard for WP 3.3+ or later
+1. Show realtime datetime on top of DashBoard for WP 3.3+ or later
 `
 √ Speedup Frontend Loading
 √ Speedup Backennd Loading
-√ Speedup Dashboard Loading
+√ Speedup DashBoard Loading
 √ Reduce Core Memory Consumption
 √ Reduce WordPress Memory Usage
 √ Free Unused Memory Load
@@ -52,13 +53,14 @@ On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and
 1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
 1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
 = Thanks =
-To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for class trick ;)
+To [olyma](http://wordpress.org/plugins/one-click-logout-barless/) :)
+To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for Class Trick ;)
 == Installation ==
 = Plugin Installation =
 1. Upload this plugin to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 = Before Installation =
-Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar -> when viewing site -> in Dashboard
+Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar -> when viewing site -> in DashBoard
 
 Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Toolbar -> Show Toolbar when viewing site
 = Installation Trick =
@@ -162,24 +164,27 @@ Developmental Code in Becoming!
 1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
 1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+= Development Release =
+[Version 2013 Build 0622-BUGFIX Revision 0000-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/wp-admin-bar-removal.zip)
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar
- * NEW Show realtime datetime on top of Dashboard for WP 3.3+ or later
+ * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
  * UPDATED Cleaning of GNU style code indentation
  * Bump Version 2013 Build 0615 Revision 0933
 = 2013.0614.0504 =
 * Release [STABLE] Disable Admin Bar and ToolBar
- * NEW Disable User Personal Options "Show Admin Bar/Toolbar"
- * NEW Add logout functionality on top of Admin Dashboard for WP 3.3+ or later
+ * NEW Disable User Personal Options Settings "Show Admin Bar/Toolbar"
+ * NEW Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
  * UPDATED Code Cleanup
  * UPDATED Handy Syntax
  * Bump Version 2013 Build 0614 Revision 0504
 = 2013.0613.0448 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Disable Frontend Bump CB
- * NEW Disable Backend Dashboard Admin Menu Shaddow Effect
- * NEW Disable Backend Dashboard Admin Menu Pointer (tooltips) Function
- * NEW Disable Backend "gap" on top of Admin Dashboard for WP 3.3+ or later
+ * NEW Disable Frontend "28px gap" on top of Site Home Page
+ * NEW Disable Backend DashBoard Admin Menu Shaddow Effect
+ * NEW Disable Backend DashBoard Admin Bar/ToolBar Pointer (ToolTips)
+ * NEW Disable Backend "28px gap" on top of Admin DashBoard
  * NEW Add Header and Footer Log
  * UPDATED Class Removal
  * UPDATED Style Removal
@@ -207,11 +212,11 @@ Developmental Code in Becoming!
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
 = 2013.0615.0936 =
-* Release [STABLE] Show realtime datetime on top of Dashboard for WP 3.3+ or later
+* Release [STABLE] Show realtime datetime on top of DashBoard for WP 3.3+ or later
 = 2013.0614.0504 =
-* Release [STABLE] Disable Backend Dashboard User Option Admin Bar/Toolbar Choice. Add logout functionality on top of Admin Dashboard for WP 3.3+ or later.
+* Release [STABLE] Disable Backend DashBoard User Option Admin Bar/Toolbar Choice. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later.
 = 2013.0613.0448 =
-* Release [STABLE] Disable: Frontend Bump CB, Backend Dashboard Admin Menu Shaddow Effect, Backend Dashboard Admin Menu Pointers Function, Backend "gap" on top of Admin Dashboard for WP 3.3+ or later. Add: Header and Footer Log.
+* Release [STABLE] Disable: Frontend Bump CB, Backend DashBoard Admin Menu Shaddow Effect, Backend DashBoard Admin Menu Pointers Function, Backend "gap" on top of Admin DashBoard for WP 3.3+ or later. Add: Header and Footer Log.
 = 2011.1212.2011 =
 * Release [STABLE] Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar.
 = License =
