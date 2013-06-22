@@ -153,20 +153,25 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 			wp_die( __( 'This Plugin Requires WordPress 3.1+ or Greater: Activation Stopped!' ) );
 		}
 
-	function wptrcd_rbmse()
+	function wptrcd_rbams()
 		{
+			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
 			echo '<style type="text/css">#adminmenuShaddow,#adminmenuback{background-image:none}</style>';
+			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
 		}
-	add_action( 'admin_head', 'wptrcd_rbmse' );
+	add_action( 'admin_head', 'wptrcd_rbams' );
 
-	function wptrcd_rbwog()
+	function wptrcd_rbf28px()
 		{
+			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
 			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
+			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
 		}
-	add_action( 'admin_print_styles', 'wptrcd_rbwog', 21 );
+	add_action( 'admin_print_styles', 'wptrcd_rbf28px', 21 );
 
-	function wptrcd_abtlhdr()
+	function wptrcd_abtlh()
 		{
+			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
 ?>
 <style type="text/css">table#tbrcss td#tbrcss_ttl a:link,table#tbrcss td#tbrcss_ttl a:visited{text-decoration:none}table#tbrcss td#tbrcss_lgt,table#tbrcss td#tbrcss_lgt a{text-decoration:none}</style>
 <table style="margin-left:6px;float:left;z-index:100;position:relative;left:0px;top:0px;background:none;padding:0px;border:0px;border-bottom:1px solid #DFDFDF" id="tbrcss" border="0" cols="4" width="97%" height="33">
@@ -215,23 +220,32 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 </tr>
 </table>
 <?php
+			echo "\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
 		}
 
 	global $wp_version;
 
 	if ( $wp_version >= 3.3 )
 		{
-			add_action( 'in_admin_header', 'wptrcd_abtlhdr' );
+			add_action( 'in_admin_header', 'wptrcd_abtlh' );
 		}
 
-	function wptrcd_rbbcb()
+	function wptrcd_rfbcb()
 		{
 			if ( has_filter( 'wp_head', '_admin_bar_bump_cb' ) )
 				{
 					remove_filter( 'wp_head', '_admin_bar_bump_cb' );
 				}
 		}
-	add_filter( 'wp_head', 'wptrcd_rbbcb', 1 );
+	add_filter( 'wp_head', 'wptrcd_rfbcb', 1 );
+
+	function wptrcd_rfmp()
+		{
+			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
+			echo '<style type="text/css" media="print">#wpadminbar{display:none}</style>';
+			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
+		}
+	add_action( 'wp_head', 'wptrcd_rfmp', 1  );
 
 	function wp_admin_bar_toolbar_init()
 		{
@@ -253,11 +267,13 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	function wptrcd_ruppoabpc()
 		{
+			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
 			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
+			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
 		}
 		add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
 
-	function wptrcd_hflg()
+	function wptrcd_hfl()
 		{
 			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0622-BUGFIX.0526-DEVELOPMENTAL Active - Tag: ".md5(md5("".""))."-->\n";
 			echo "\n<!--This Site is Optimized to Speedup DashBoard and Minimize Memory Load Consumption";
@@ -283,7 +299,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 			echo "-->\n\n";
 		}
-	add_action( 'wp_head', 'wptrcd_hflg' );
-	add_action( 'wp_footer', 'wptrcd_hflg' );
+	add_action( 'wp_head', 'wptrcd_hfl' );
+	add_action( 'wp_footer', 'wptrcd_hfl' );
 
 ?>
