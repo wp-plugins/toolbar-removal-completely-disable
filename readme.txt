@@ -13,6 +13,14 @@ Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or late
 
 On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and based on "Disable Admin Bar and ToolBar and more ..." plugin, and the Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" trasformed on standalone plugin, for node/group and more ... removal, only!
 
+= Rules =
+1. Compatible with: WordPress, bbPress, Buddypress.
+1. Unified Code to run with WordPress 3.1 to 3.6 or later
+1. All in One Disabler and Removal: Bump CB, Node, Shaddow, Pointer, Profile, Code.
+1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+
 = Features =
 
 1. Disable WordPress 3.1+ (or later) Admin Bar
@@ -43,18 +51,52 @@ On future the code of "Admin Bar Removal" and "ToolBar Removal" was unified, and
 √ Ready to Single and Network Multisite Environment.
 √ Compatible with Shared, Dedicated, Cloud and VPS Hosting.
 √ Run on Hosting with high and low resources.
+√ The configuration of this plugin is Automattic!
 √ Nothing is written into space disk.
 √ Nothing is written into wp_option database table.
 `
-= Rules =
-1. Compatible with: WordPress, bbPress, Buddypress.
-1. Unified Code to run with WordPress 3.1 to 3.6 or later
-1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
-1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+`
+No need to delete anything from hosting space when deactivate!
+No need to delete anything from hosting space when deleted!
+No need to delete anything from the database when deactivate!
+No need to delete anything from the database when deleted!
+No need to delete anything from the wp_option when deactivate!
+No need to delete anything from the wp_option when deleted!
+Not need other actions except installing or uninstall it!
+`
 = Thanks =
 To [olyma](http://wordpress.org/plugins/one-click-logout-barless/) :)
 To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for Class Trick ;)
+
+* [Plugins](http://slangji.wordpress.com/plugins/): il you are happy make a small [Free Donation](http://slangji.wordpress.com/donate/) for my work.
+ * [WP Overview (lite)](http://wordpress.org/plugins/wp-overview-lite/)
+ * [WP Missed Schedule](http://wordpress.org/plugins/wp-missed-schedule/)
+ * [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
+ * [WP Admin Bar Removal Node](http://wordpress.org/plugins/wp-admin-bar-node-removal/)
+ * [WP Toolbar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/ToolBar-Removal-completely-disable-73548.html)
+ * [WP Toolbar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
+ * [Noindex (login) WordPress Deindexing](http://wordpress.org/plugins/wp-login-deindexing/) (refreshed)
+ * [Noindex (total) WordPress Deindexing](http://wordpress.org/plugins/wp-total-deindexing/) (refreshed)
+ * [IE Enhancer and Modernizer](http://wordpress.org/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
+ * [Memory Load Consumption db size Usage Indicator](http://wordpress.org/plugins/wp-memory-db-indicator/) (new)
+ * [Header and Footer Log](http://wordpress.org/plugins/wp-header-footer-log/) Only For Developers (and advanced users)
+
+* [Themes](http://slangji.wordpress.com/themes/): for more nfo [Contact Me](http://slangji.wordpress.com/contact/)
+ * CLEAN
+ * MINIMAL
+ * SIMPLE
+ * PLAIN TEXT ONLY
+ * HYBRID PLAIN TEXT ONLY
+ * EMPTY
+ * EMPTY CMS FRAMEWORK
+
+Find More on [sLaNGjI's Developer Page @ SoftPedia.com](http://webscripts.softpedia.com/author/sLa-1869786722.html).
+
+Author Website: [slangji.wordpress.com](http://slangji.wordpress.com/) - Author Repositories: [github.com/sLaNGjI](https://github.com/sLaNGjI)
+
+Follow Me on [LinkedIn](http://www.linkedin.com/in/slangjis) - [Twitter](https://twitter.com/sLanGjIs) - [Gravatar](http://en.gravatar.com/slangji) - [FaceBook](https://www.facebook.com/sLaNGjI) - [Google+](https://plus.google.com/104369105810975562211/) - [FriendFeed](http://friendfeed.com/slangjis) - [RSS](http://feeds.feedburner.com/slangjis) 
+
+Author URL [sLa](http://wordpress.org/plugins/profile/sla) moved to [sLaNGjI](http://wordpress.org/plugins/profile/slangji) update bookmark!
 == Installation ==
 = Plugin Installation =
 1. Upload this plugin to the `/wp-content/plugins/` directory
@@ -99,17 +141,19 @@ What works..
 
 After some testing, we’ve seen the following functions.php snippets continue to work in WordPress version 3.3:
 
-// disable the admin bar (front end only) show_admin_bar(false); // disable the admin bar (front end only) add_filter('show_admin_bar', '__return_false');
+// disable the admin bar (front end only) -> show_admin_bar( false );
+// disable the admin bar (front end only) -> add_filter( 'show_admin_bar', '__return_false' );
 
 In WP 3.1, these functions hid the Admin Bar on both sides of the fence — front end & back end. In WP 3.3+, these snippets will hide the Admin Toolbar only on the front-end of your site (the public side). Likewise, this snippet of CSS added to your theme’s style.css file hides the Toolbar on the front-end:
 
-/* hide the admin bar (front end only) */ #wpadminbar { display:none; }
+/* hide the admin bar (front end only) */ -> #wpadminbar{display:none}
 
 Keep in mind that, when using the CSS method, the Toolbar markup is still present in the source code, but will not be displayed in the browser.
 
 Here is another useful snippet for disabling the Toolbar for lesser users:
 
-// show admin bar only for admins if (!current_user_can('manage_options')) { add_filter('show_admin_bar', '__return_false'); } // show admin bar only for admins and editors if (!current_user_can('edit_posts')) { add_filter('show_admin_bar', '__return_false'); }
+// show admin bar only for admins -> if ( !current_user_can( 'manage_options' ) ) { add_filter( 'show_admin_bar', '__return_false' ); }
+// show admin bar only for admins and editors -> if ( !current_user_can( 'edit_posts' ) ) { add_filter( 'show_admin_bar', '__return_false'); }
 
 Note that this also only applies to Toolbar display on the front-end.
 What doesn’t work..
@@ -153,19 +197,13 @@ Markdown uses email style notation for blockquotes and I've been told:
 4. The 'new' WP ToolBar User Profile Settings: bamboozled! No option to disable for back-end!
 == Changelog ==
 = Disclaimer =
-`All previous release, prior of latest stable, are on fact
+`
+All previous release, prior of latest stable, are
 deprecated, and no longer supported on this project:
-is very suggested upgrade to the latest build always!`
-= Development Status =
-Developmental Code in Becoming!
-= Common Rules =
-1. Compatible with: WordPress, bbPress, Buddypress.
-1. Unified Code to run with WordPress 3.1 to 3.6 or later
-1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
-1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+is very suggested upgrade to the latest build always!
+`
 = Development Release =
-[Version 2013 Build 0622-BUGFIX Revision 0000-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/wp-admin-bar-removal.zip)
+[Version 2013 Build 0622-BUGFIX Revision 0000-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/toolbar-removal-completely-disable.zip) Code in Becoming!
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar
  * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
@@ -212,7 +250,7 @@ Developmental Code in Becoming!
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
 = 2013.0615.0936 =
-* Release [STABLE] Show realtime datetime on top of DashBoard for WP 3.3+ or later
+* Release [STABLE] Show realtime datetime on top of DashBoard for WP 3.3+ or later.
 = 2013.0614.0504 =
 * Release [STABLE] Disable Backend DashBoard User Option Admin Bar/Toolbar Choice. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later.
 = 2013.0613.0448 =
@@ -220,10 +258,6 @@ Developmental Code in Becoming!
 = 2011.1212.2011 =
 * Release [STABLE] Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar.
 = License =
-[Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) - Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar.
-
-Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
-
 * This program is free software; you can redistribute it and/or
 modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
 as published by the Free Software Foundation; either [version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
