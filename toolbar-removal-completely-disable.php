@@ -1,20 +1,20 @@
-<?php
+<?php 
 
 /*
-Plugin Name: √ WP Disable Admin Bar and ToolBar - DEV
+Plugin Name: WP Disable Admin Bar and ToolBar - DEV
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
 Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar (unified code work with WP 3.1+ to 3.8+). This is only a "Basic" disabler. For "Full" removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>  The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title"GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title"GNU style indentation coding standard compatible">GNU Style</a> indentation compatible. Meet detailed <a href="http://wordpress.org/plugins/about/guidelines/Plugin" title"This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a> | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a>
-Version: 2013.0622-BUGFIX.0526-DEVELOPMENTAL
-Author: sLa
+Version: 2013.0624-BUGFIX.0956-DEVELOPMENTAL
+Author: sLa NGjI's
 Author URI: http://slangji.wordpress.com/
 Requires at least: 3.1
 Tested up to: 3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Indentation: GNU style
+Indentation: GNU style coding standard
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
- * Development Release: Version 2013 Build 0622-BUGFIX Revision 0000-DEVELOPMENTAL
+ * STABLE release: Version 2013 Build 0615 Revision 0936
  *
  * Please Noted That:
  * For Completely Backend Removal on WordPress 3.1+ (or later) is needed [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
@@ -22,9 +22,9 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * For Completely Backend Removal on WordPress 3.3+ (or later) is needed [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
  * Try also your Add-On [WP ToolBar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
  *
- * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
+ * [WP Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
  *
- * Copyright (C) 2011-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
@@ -61,39 +61,39 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * This uses (or it parts) code derived from
  *
  * wp-header-footer-log.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2009-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2009-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * wp-admin-bar-removal.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2010-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2010-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * wp-admin-bar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2010-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2010-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * toolbar-removal-completely-disable.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2011-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * one-click-logout-barless.php by olyma <rackofpower.com>
- * Copyright (C) 2011 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
+ * Copyright (C) 2011-2012 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
  * wp-toolbar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2012-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2012-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later)
  *
  * This wp-header-footer-log.php uses (or it parts) code derived from
  *
  * wp-footer-log.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2008-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2008-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * sLa2sLaNGjIs.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2009-2013 [sLaNGjI's](http://profiles.wordpress.org/slangji) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2009-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later)
  *
  * According to the Terms of the GNU General Public License version 2 (or later) part of Copyright belongs to your own author and part belongs to their respective others authors:
  *
- * Copyright (C) 2008-2013 [sLaNGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangji[at]gmail[dot]com>)
- * Copyright (C) 2011 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
+ * Copyright (C) 2008-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2011-2012 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
  * √ VIOLATIONS
  *
@@ -117,20 +117,20 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * √ THANKS
  * To [olyma](http://wordpress.org/plugins/one-click-logout-barless/)
- * To [storkontheroof](http://profiles.wordpress.org/storkontheroof/) for class trick ;)
+ * To [storkontheroof](http://profiles.wordpress.org/storkontheroof/)
  */
 
 	/**
-	 * @package Disable Admin Bar and ToolBar (State of The Art Plugin ?)
+	 * @package WP Disable Admin Bar and ToolBar (State of The Art Plugin ?)
 	 * @subpackage WordPress PlugIn
-	 * @description Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
+	 * @description Disable WP 3.1+ Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
 	 * @since 3.1.0
 	 * @tested 3.8.0
-	 * @version 2013.0622-BUGFIX.0526-DEVELOPMENTAL
+	 * @version 2013.0624-BUGFIX.0956-DEVELOPMENTAL
 	 * @status DEVELOPMENT release
-	 * @author sLa
+	 * @author sLa NGjI's
 	 * @license GPLv2 or later
-	 * @indentation GNU style
+	 * @indentation GNU style coding standard
 	 * @keybit 
 	 * @keysum 
 	 * @keytag 74be16979710d4c4e7c6647856088456
@@ -271,11 +271,11 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
 			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
 		}
-		add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
+	add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
 
 	function wptrcd_hfl()
 		{
-			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0622-BUGFIX.0526-DEVELOPMENTAL Active - Tag: ".md5(md5("".""))."-->\n";
+			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0624-BUGFIX.0956-DEVELOPMENTAL Active - Tag: ".md5(md5("".""))."-->\n";
 			echo "\n<!--This Site is Optimized to Speedup DashBoard and Minimize Memory Load Consumption";
 
 			global $wp_version;
