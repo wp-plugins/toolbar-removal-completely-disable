@@ -22,7 +22,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * For Completely Backend Removal on WordPress 3.3+ (or later) is needed [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
  * Try also your Add-On [WP ToolBar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
  *
- * [WP Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
+ * [WP Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
  *
  * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
@@ -69,11 +69,11 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * wp-admin-bar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
  * Copyright (C) 2010-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
- * toolbar-removal-completely-disable.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
- *
  * one-click-logout-barless.php by olyma <rackofpower.com>
  * Copyright (C) 2011-2012 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
+ *
+ * wp-toolbar-removal.php by sLa <slangji[at]gmail[dot]com>
+ * Copyright (C) 2012-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * wp-toolbar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
  * Copyright (C) 2012-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
@@ -123,7 +123,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	/**
 	 * @package WP Disable Admin Bar and ToolBar
 	 * @subpackage WordPress PlugIn
-	 * @description Disable WP 3.1+ Admin Bar and WP 3.3+ ToolBar
+	 * @description Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
 	 * @since 3.1.0
 	 * @tested 3.6.0
 	 * @version 2013.0615.0936
@@ -251,20 +251,20 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	function wptrcd_hfl()
 		{
 			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag: ".md5(md5("".""))."-->\n";
-			echo "\n<!--This Site is Optimized to Speedup DashBoard and Minimize Memory Load Consumption";
+			echo "\n<!--This Site is Optimized to Speedup DashBoard and Minimize Memory Load Consumption with Disabled";
 
 			global $wp_version;
 
 			if ( $wp_version >= 3.3 )
 				{
-					echo " with ToolBar Disabled";
+					echo " ToolBar";
 				}
 
 			if ( $wp_version >= 3.1 )
 				{
 					if ( $wp_version < 3.3 )
 						{
-							echo " with Admin Bar Disabled";
+							echo " Admin Bar";
 						}
 				}
 
