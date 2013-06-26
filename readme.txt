@@ -42,19 +42,19 @@ Features:
 1. Add Header and Footer Log
 1. Show realtime datetime on top of DashBoard for WP 3.3+ or later
 `
-√ Speedup Frontend Loading
-√ Speedup Backennd Loading
-√ Speedup DashBoard Loading
-√ Reduce Core Memory Consumption
-√ Reduce WordPress Memory Usage
-√ Free Unused Memory Load
-√ Less Plugin Memory Consumption.
-√ Full Strict Security Rules Applied.
-√ Handy Syntax Improvement.
-√ Reduce Code Bloat.
-√ Code Cleanup for faster loading.
-√ Only one unique PHP file.
-√ Supports PHP 4 and PHP 5.
+Speedup Frontend Loading
+Speedup Backennd Loading
+Speedup DashBoard Loading
+Reduce Core Memory Consumption
+Reduce WordPress Memory Usage
+Free Unused Memory Load
+Less Plugin Memory Consumption.
+Full Strict Security Rules Applied.
+Handy Syntax Improvement.
+Reduce Code Bloat.
+Code Cleanup for faster loading.
+Only one unique PHP file.
+Supports PHP 4 and PHP 5.
 `
 `
 Nothing is written into space disk!
@@ -69,8 +69,8 @@ Not need other actions except installing or uninstall it!
 `
 Thanks to:
 
-1. [olyma](http://wordpress.org/plugins/one-click-logout-barless/)
-1. [storkontheroof](http://profiles.wordpress.org/storkontheroof/)
+1. [olyma]()
+1. [storkontheroof]()
 
 * [My Others WordPress Plugins](http://slangji.wordpress.com/plugins/)
  * [WP Overview (lite)](http://wordpress.org/plugins/wp-overview-lite/)
@@ -174,63 +174,15 @@ Without a doubt things will continue to change, and it’ll be fun watching as W
 5. Admin Bar and ToolBar with "One Click Logout Barless" add-on Plugin ...
 6. DashBoard with "WP ToolBar Removal": faster and user friendly ...
 7. Personal Options: not needed if Admin Bar or ToolBar is disadled and removed!
+== License ==
 == Changelog ==
 `
 All previous release, prior of latest stable, are
 deprecated, and no longer supported on this project:
 is very suggested upgrade to the latest build always!
 `
-`
-√ Speedup Frontend Loading
-√ Speedup Backennd Loading
-√ Speedup DashBoard Loading
-√ Reduce Core Memory Consumption
-√ Reduce WordPress Memory Usage
-√ Free Unused Memory Load
-√ Less Plugin Memory Consumption.
-√ Full Strict Security Rules Applied.
-√ Handy Syntax Improvement.
-√ Reduce Code Bloat.
-√ Code Cleanup for faster loading.
-√ Only one unique PHP file.
-√ Supports PHP 4 and PHP 5.
-`
-`
-Nothing is written into space disk!
-Nothing is written into wp_option database table!
-No need to delete anything from hosting space when deactivate!
-No need to delete anything from hosting space when deleted!
-No need to delete anything from the database when deactivate!
-No need to delete anything from the database when deleted!
-No need to delete anything from the wp_option when deactivate!
-No need to delete anything from the wp_option when deleted!
-Not need other actions except installing or uninstall it!
-`
-= Rules =
-1. Compatible with: WordPress, bbPress, Buddypress.
-1. Unified Coding to run with WordPress 3.1+ to 3.6+ or later.
-1. Ready to Single and Network Multisite Environment.
-1. All in One Disabler 28px, Bump CB, Node, Shaddow, Pointer, Profile, Code.
-1. The configuration of this plugin is Automattic!
-1. Compatible with Shared, Dedicated, Cloud and VPS Hosting.
-1. Run on Hosting with high and low resources.
-1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
-1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
-= Features =
-1. Disable WordPress 3.1+ (or later) Admin Bar
-1. Disable WordPress 3.3+ (or later) ToolBar
-1. Disable Frontend Bump CB
-1. Disable Frontend "28px gap" on top of Site Home Page
-1. Disable Backend DashBoard Admin Menu Shaddow Effect
-1. Disable Backend DashBoard Admin Bar/ToolBar Pointer (ToolTips)
-1. Disable Backend "28px gap" on top of Admin DashBoard for WP 3.3+ or later
-1. Disable User Personal Options Settings "Show Admin Bar/ToolBar"
-1. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
-1. Add Header and Footer Log
-1. Show realtime datetime on top of DashBoard for WP 3.3+ or later
 = Development Release =
-[Version 2013 Build 0624-BUGFIX Revision 0956-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/toolbar-removal-completely-disable.zip) Code in Becoming!
+[Version 2013 Build 0624-BUGFIX Revision 0956-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/toolbar-removal-completely-disable.zip)
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar with New Unified Coding!
  * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
