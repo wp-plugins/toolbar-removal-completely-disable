@@ -24,7 +24,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * [WP Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
  *
- * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/slangjis) (email: <slangjis[at]gmail[dot]com>)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
@@ -61,38 +61,38 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * This uses (or it parts) code derived from
  *
  * wp-header-footer-log.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2009-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2009-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * wp-admin-bar-removal.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2010-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2010-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * wp-admin-bar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2010-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2010-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
- * one-click-logout-barless.php by olyma <rackofpower.com>
+ * one-click-logout-barless.php by olyma <olyma[at]rackofpower[dot]com>)
  * Copyright (C) 2011-2012 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
  * wp-toolbar-removal.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2012-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2012-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * wp-toolbar-removal-node-addon.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2012-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2012-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later)
  *
  * This wp-header-footer-log.php uses (or it parts) code derived from
  *
  * wp-footer-log.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2008-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2008-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * sLa2sLaNGjIs.php by sLa <slangji[at]gmail[dot]com>
- * Copyright (C) 2009-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2009-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later)
  *
  * According to the Terms of the GNU General Public License version 2 (or later) part of Copyright belongs to your own author and part belongs to their respective others authors:
  *
- * Copyright (C) 2008-2013 [sLa NGjI's](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
+ * Copyright (C) 2008-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  * Copyright (C) 2011-2012 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
  * √ VIOLATIONS
@@ -116,8 +116,8 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * √ THANKS
- * To [olyma](http://wordpress.org/plugins/one-click-logout-barless/)
- * To [storkontheroof](http://profiles.wordpress.org/storkontheroof/)
+ * To [olyma]()
+ * To [storkontheroof]()
  */
 
 	/**
