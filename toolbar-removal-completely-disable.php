@@ -41,7 +41,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * or write to the Free Software Foundation, Inc., 51 Franklin Street,
  * Fifth Floor, Boston, MA 02110-1301, USA.
  *
- * √ DISCLAIMER
+ * DISCLAIMER
  *
  * The license under which the WordPress software is released is the GPLv2 (or later) from the
  * Free Software Foundation. A copy of the license is included with every copy of WordPress.
@@ -56,7 +56,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
- * √ THERMS
+ * THERMS
  *
  * This uses (or it parts) code derived from
  *
@@ -95,27 +95,27 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * Copyright (C) 2008-2013 [sLaNGjI](http://slangji.wordpress.com/) (email: <slangji[at]gmail[dot]com>)
  * Copyright (C) 2011-2012 [olyma](http://rackofpower.com/) (email: <olyma[at]rackofpower[dot]com>)
  *
- * √ VIOLATIONS
+ * VIOLATIONS
  *
  * [Violations of the GNU Licenses](http://www.gnu.org/licenses/gpl-violation.en.html)
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
- * √ GUIDELINES
+ * GUIDELINES
  *
  * This software meet [Detailed Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
- * √ CODING
+ * CODING
  *
  * This software implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
- * √ VALIDATION
+ * VALIDATION
  *
  * This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/plugins/about/validator/) directives.
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
- * √ THANKS
+ * THANKS
  * To [olyma]()
  * To [storkontheroof]()
  */
