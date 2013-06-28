@@ -5,7 +5,7 @@ Plugin Name: WP Disable Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
 Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar (unified code work with WP 3.1+ to 3.6+). This is only a "Basic" disabler. For "Full" remover refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a> The configuration of this plugin is Automattic! Work under <a href="http://www.gnu.org/licenses/gpl-2.0.html" title="GPLv2 or later License compatible">GPLv2</a> or later License. <a href="http://www.gnu.org/prep/standards/standards.html" title="GNU style indentation coding standard compatible">GNU style</a> indentation coding standard compatible. Meet detailed <a href="http://wordpress.org/plugins/about/guidelines/Plugin" title="This plugin meet detailed guideline quality requirements">Guidelines</a> quality requirements. | <a href="http://slangji.wordpress.com/contact/" title="Send Me Bug and Suggestion">Contact</a> | <a href="http://slangji.wordpress.com/donate/" title="Free Donation">Donate</a>
 Version: 2013.0615.0936
-Author: sLa
+Author: sLaNGjI
 Author URI: http://slangji.wordpress.com/
 Requires at least: 3.1
 Tested up to: 3.6
@@ -13,8 +13,6 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style coding standard
 Indentation URI: http://www.gnu.org/prep/standards/standards.html
- *
- * DEVELOPMENT release: Version 2013 Build 0624-BUGFIX Revision 0956-DEVELOPMENTAL
  *
  * Please Noted That:
  * For Completely Backend Removal on WordPress 3.1+ (or later) is needed [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
@@ -24,7 +22,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * [WP Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
  *
- * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/slangjis) (email: <slangjis[at]gmail[dot]com>)
+ * Copyright (C) 2011-2013 [sLa NGjI's](http://slangji.wordpress.com/slangjis/) (email: <slangjis[at]gmail[dot]com>)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
@@ -127,8 +125,9 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	 * @since 3.1.0
 	 * @tested 3.6.0
 	 * @version 2013.0615.0936
-	 * @status STABLE release
-	 * @author sLa
+	 * @status STABLE (trunk) release
+	 * @development Code in Becoming!
+	 * @author sLaNGjI
 	 * @license GPLv2 or later
 	 * @indentation GNU style coding standard
 	 * @keybit 
