@@ -175,6 +175,7 @@ Without a doubt things will continue to change, and it’ll be fun watching as W
 6. DashBoard with "WP ToolBar Removal": faster and user friendly ...
 7. Personal Options: not needed if Admin Bar or ToolBar is disadled and removed!
 == License ==
+Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 == Changelog ==
 `All releases, prior latest stable, are deprecated, 
 and no longer supported on this project: is very 
