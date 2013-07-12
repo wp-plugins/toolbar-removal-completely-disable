@@ -67,10 +67,7 @@ No need to delete anything from the wp_option when deactivate!
 No need to delete anything from the wp_option when deleted!
 Not need other actions except installing or uninstall it!
 `
-Thanks to:
-
-1. [olyma]()
-1. [storkontheroof]()
+Thanks to: olyma, storkontheroof, focus3d
 
 * [My Others WordPress Plugins](http://slangji.wordpress.com/plugins/)
  * [WP Overview (lite)](http://wordpress.org/plugins/wp-overview-lite/)
