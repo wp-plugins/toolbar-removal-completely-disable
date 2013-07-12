@@ -1,15 +1,15 @@
-=== Disable Admin Bar and ToolBar remove more ===
-Contributors: sLaNGjI
+=== Disable Admin Bar and ToolBar ===
+Contributors: slangjis
 Donate link: http://slangji.wordpress.com/donate/
-Tags: adminbar, admin-bar, backend, disable, frontend, pointer, remove, shadow, sla, slangji, tool-bar, toolbar
+Tags: adminbar, admin-bar, backend, disable, frontend, pointer, remove, shadow, sla, slangjis, tool-bar, toolbar
 Stable tag: trunk
 Requires at least: 3.1
 Tested up to: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-disable wordpress toolbar admin bar for all users subscribers on frontend backend free memory speedup dashboard with new unified coding by sLa
+disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
 == Description ==
-disable wordpress toolbar admin bar for all users subscribers on frontend backend free memory speedup dashboard with new unified coding by sLa
+disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
 
 Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, backend Admin Menu Shadow Effect, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automattic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.6+
 
