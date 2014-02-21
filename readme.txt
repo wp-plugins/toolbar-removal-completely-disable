@@ -4,21 +4,23 @@ Donate link: http://slangji.wordpress.com/donate/
 Tags: adminbar, admin-bar, backend, disable, frontend, pointer, remove, shadow, sla, slangjis, tool-bar, toolbar
 Stable tag: trunk
 Requires at least: 3.1
-Tested up to: 3.6
+Tested up to: 3.7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
 == Description ==
 disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
 
-Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, backend Admin Menu Shadow Effect, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automattic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.6+
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, backend Admin Menu Shadow Effect, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automattic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.7+
 
-The code of "Admin Bar Removal" and "ToolBar Removal" was unified, and based on "Disable Admin Bar and ToolBar and more ..." plugin, and the Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" trasformed on standalone plugin, for node/group and more ... removal, only!
+The code of "Admin Bar Removal" and "ToolBar Removal" was unified, based on "Disable Admin Bar and ToolBar" plugin. The Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" was trasformed on standalone plugin for node/group removal only!
+
+Is planned compatibility update for WordPress 3.8+ and 3.9+ ? No! The only plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
 Rules:
 
 1. Compatible with: WordPress, bbPress, Buddypress.
-1. Unified Coding to run with WordPress 3.1+ to 3.6+ or later.
+1. Unified Coding to run with WordPress 3.1+ to 3.7+ .
 1. Ready to Single and Network Multisite Environment.
 1. All in One Disabler 28px, Bump CB, Node, Shadow, Pointer, Profile, Code.
 1. The configuration of this plugin is Automattic!
