@@ -84,7 +84,6 @@ Thanks to: olyma, storkontheroof, focus3d
  * [Memory Load Consumption db size Usage Indicator](http://wordpress.org/plugins/wp-memory-db-indicator/) (new)
  * [Header and Footer Log](http://wordpress.org/plugins/wp-header-footer-log/) Only For Developers (and advanced users)
 == Installation ==
-= Before Installation =
 before install this plugin, is reccomended, but is not needed, to unflag -> personal options -> show admin bar/toolbar -> when viewing site/on dashboard
 
 = How to install ToolBar Removal (manual) =
@@ -102,7 +101,7 @@ before install this plugin, is reccomended, but is not needed, to unflag -> pers
 2. Delete ToolBar Removal from Menu Plugins of Control Panel.
 = Installation Trick =
 A neat trick is to put this single file (not its parent directory) in the wp-content/mu-plugins directory (create it if not exists) so you won't even have to enable it, it will be loaded by default.
-
+= Before Installation =
 Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar -> when viewing site -> in DashBoard
 
 Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> ToolBar -> Show ToolBar when viewing site
