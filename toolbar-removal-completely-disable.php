@@ -2,12 +2,12 @@
 /*
 Plugin Name: Disable Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar (unified code work with WP 3.1+ to 3.7+). This is only a "Basic" disabler. For "Full" remover refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a> The configuration of this plugin is Automattic!
+Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar (unified code work with WP 3.1+ ~ 3.7+) This is only a "Basic" disabler. For "Full" remover refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a> The configuration of this plugin is Automattic!
 Version: 2013.0615.0936
 Author: sLa NGjI's
 Author URI: http://slangji.wordpress.com/
 Requires at least: 3.1
-Tested up to: 3.7.2
+Tested up to: 3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style coding standard
@@ -265,7 +265,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 				{
 					$links[] = '<a href="http://slangji.wordpress.com/donate/">Donate</a>';
 					$links[] = '<a href="http://slangji.wordpress.com/contact/">Contact</a>';
-					$links[] = '<a href="http://slangji.wordpress.com/plugins/">Others plugins</a>';
+					$links[] = '<a href="http://slangji.wordpress.com/plugins/">Other plugins</a>';
 				}
 			return $links;
 		}

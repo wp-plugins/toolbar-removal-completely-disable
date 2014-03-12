@@ -1,10 +1,10 @@
 === Disable Admin Bar and ToolBar ===
 Contributors: slangjis
 Donate link: http://slangji.wordpress.com/donate/
-Tags: adminbar, admin-bar, backend, disable, frontend, pointer, remove, shadow, sla, slangjis, tool-bar, toolbar
+Tags: admin-bar, adminbar, disable-admin-bar, disable-toolbar, disable-wordpress-admin-bar, disable-wordpress-toolbar, remove-admin-bar, remove-toolbar, remove-wordpress-admin-bar, remove-wordpress-toolbar, slangjis, toolbar
 Stable tag: trunk
 Requires at least: 3.1
-Tested up to: 3.7.2
+Tested up to: 3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
@@ -15,7 +15,7 @@ Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or late
 
 The code of "Admin Bar Removal" and "ToolBar Removal" was unified, based on "Disable Admin Bar and ToolBar" plugin. The Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" was trasformed on standalone plugin for node/group removal only!
 
-Is planned compatibility update for WordPress 3.8+ and 3.9+ ? No! The only plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
+Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
 Rules:
 
@@ -85,9 +85,8 @@ Thanks to: olyma, storkontheroof, focus3d
  * [Header and Footer Log](http://wordpress.org/plugins/wp-header-footer-log/) Only For Developers (and advanced users)
 == Installation ==
 = Before Installation =
-Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar -> when viewing site -> in DashBoard
+before install this plugin, is reccomended, but is not needed, to unflag -> personal options -> show admin bar/toolbar -> when viewing site/on dashboard
 
-Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> ToolBar -> Show ToolBar when viewing site
 = How to install ToolBar Removal (manual) =
 1. Download ToolBar Removal.
 2. Upload it into your plugins directory from Plugin Add Feature or FTP.
@@ -103,10 +102,14 @@ Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is 
 2. Delete ToolBar Removal from Menu Plugins of Control Panel.
 = Installation Trick =
 A neat trick is to put this single file (not its parent directory) in the wp-content/mu-plugins directory (create it if not exists) so you won't even have to enable it, it will be loaded by default.
+
+Before install this plugin, on WordPress 3.1+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> Show Admin Bar -> when viewing site -> in DashBoard
+
+Before install this plugin, on WordPress 3.3+ (or later) is reccomended, but is not needed, to unflag all User -> Personal Options -> ToolBar -> Show ToolBar when viewing site
 = Troubleshooting =
 If all else fails and your site is broken remove directly via ftp on your host space /home/your-wp-install-dir/wp-content/plugins/wp-toolbar-removal/
 == Frequently Asked Questions ==
-disable admin bar or toolbar on personal options turn off only theme integration, but not remove code, without minimizing memory consumption ... 
+disable admin bar or toolbar on personal options turn off only theme integration but not remove code without minimizing memory consumption and speedup loading of control panel
 
 [Goodbye Admin Bar, Hello ToolBar](http://digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/) Posted on: January 13, 2012 by Jeff Starr
 
@@ -176,16 +179,73 @@ Without a doubt things will continue to change, and it’ll be fun watching as W
 == License ==
 Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 == Changelog ==
+the latest version of this plugin work on all wordpress version from 3.1+ to 3.7+ with new unified coding
+
 `All releases, prior latest stable, are deprecated, 
 and no longer supported on this project: is very 
 suggested upgrade to the latest build, always!`
 = Development Status =
 Developmental Code in Becoming!
+
+Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
+
+Rules:
+
+1. Compatible with: WordPress, bbPress, Buddypress.
+1. Unified Coding to run with WordPress 3.1+ to 3.7+
+1. Ready to Single and Network Multisite Environment.
+1. All in One Disabler 28px, Bump CB, Node, Shadow, Pointer, Profile, Code.
+1. The configuration of this plugin is Automattic!
+1. Compatible with Shared, Dedicated, Cloud and VPS Hosting.
+1. Run on Hosting with high and low resources.
+1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+
+Features:
+
+1. Disable WordPress 3.1+ (or later) Admin Bar
+1. Disable WordPress 3.3+ (or later) ToolBar
+1. Disable Frontend Bump CB
+1. Disable Frontend "28px gap" on top of Site Home Page
+1. Disable Backend DashBoard Admin Menu Shadow Effect
+1. Disable Backend DashBoard Admin Bar/ToolBar Pointer (ToolTips)
+1. Disable Backend "28px gap" on top of Admin DashBoard for WP 3.3+ or later
+1. Disable User Personal Options Settings "Show Admin Bar/ToolBar"
+1. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later
+1. Add Header and Footer Log
+1. Show realtime datetime on top of DashBoard for WP 3.3+ or later
+`
+Speedup Frontend Loading
+Speedup Backennd Loading
+Speedup DashBoard Loading
+Reduce Core Memory Consumption
+Reduce WordPress Memory Usage
+Free Unused Memory Load
+Less Plugin Memory Consumption.
+Full Strict Security Rules Applied.
+Handy Syntax Improvement.
+Reduce Code Bloat.
+Code Cleanup for faster loading.
+Only one unique PHP file.
+Supports PHP 4 and PHP 5.
+`
+`
+Nothing is written into space disk!
+Nothing is written into wp_option database table!
+No need to delete anything from hosting space when deactivate!
+No need to delete anything from hosting space when deleted!
+No need to delete anything from the database when deactivate!
+No need to delete anything from the database when deleted!
+No need to delete anything from the wp_option when deactivate!
+No need to delete anything from the wp_option when deleted!
+Not need other actions except installing or uninstall it!
+`
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar with New Unified Coding!
  * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
  * UPDATED Cleaning of GNU style code indentation
- * Bump Version 2013 Build 0615 Revision 0933
+ * Bump Version 2013 Build 0615 Revision 0936
 = 2013.0614.0504 =
 * Release [STABLE] Disable Admin Bar and ToolBar with New Unified Coding!
  * NEW Disable User Personal Options Settings "Show Admin Bar/ToolBar"
@@ -227,7 +287,7 @@ Developmental Code in Becoming!
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
 = 2013.0615.0936 =
-Release [STABLE] Show realtime datetime on top of DashBoard for WP 3.3+ or later.
+Release [STABLE] Show realtime datetime on top of DashBoard for WP 3.3+ or later. This plugin Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar with new unified coding compatible up to WordPress 3.7+
 = 2013.0614.0504 =
 Release [STABLE] Disable Backend DashBoard User Option Admin Bar/ToolBar Choice. Add logout functionality on top of Admin DashBoard for WP 3.3+ or later.
 = 2013.0613.0448 =
