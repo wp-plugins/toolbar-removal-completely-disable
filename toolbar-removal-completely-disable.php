@@ -15,7 +15,8 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * LICENSING
  *
- * [Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/) Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
+ * [WP Disable Admin Bar and ToolBar](http://wordpress.org/plugins/toolbar-removal-completely-disable/)
+ * Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
  *
  * Copyright (C) 2011-2013 [slangjis](http://slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
  *
@@ -45,7 +46,8 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * There is some legal grey area regarding what is considered a derivative work, but we feel
  * strongly that plugins and themes are derivative work and thus inherit the GPL license.
  *
- * The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html) and as license.txt into this plugin package.
+ * The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html)
+ * and as license.txt into this plugin package.
  *
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
@@ -95,7 +97,9 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * GUIDELINES
  *
- * This software meet [Detailed Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
+ * This software meet [Detailed Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/)
+ * paragraphs 1,4,10,12,13,16,17 quality requirements.
+ *
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * CODING
@@ -105,22 +109,24 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * VALIDATION
  *
- * This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/plugins/about/validator/) directives.
+ * This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to
+ * WordPress [Readme Validator](http://wordpress.org/plugins/about/validator/) directives.
+ *
  * The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
  *
  * THANKS
  *
  * To: olyma, storkontheroof, focus3d
  *
- * Please Noted That:
- * For Completely Backend Removal on WordPress 3.1+ (or later) is needed [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
+ * Please noted that for Completely Backend Removal is needed:
+ * On WordPress 3.1+ (or later) [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/)
+ * On WordPress 3.3+ (or later) [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
  * Try also your Add-On [WP Admin Bar Removal Node](http://wordpress.org/plugins/wp-admin-bar-node-removal/)
- * For Completely Backend Removal on WordPress 3.3+ (or later) is needed [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/)
  * Try also your Add-On [WP ToolBar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
  */
 
 	/**
-	 * @package Disable Admin Bar and ToolBar
+	 * @package WP Disable Admin Bar and ToolBar
 	 * @subpackage WordPress PlugIn
 	 * @description Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
 	 * @since 3.1.0
@@ -265,7 +271,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 				{
 					$links[] = '<a href="http://slangji.wordpress.com/donate/">Donate</a>';
 					$links[] = '<a href="http://slangji.wordpress.com/contact/">Contact</a>';
-					$links[] = '<a href="http://slangji.wordpress.com/plugins/">Other plugins</a>';
+					$links[] = '<a href="http://slangji.wordpress.com/plugins/">Other author plugin</a>';
 				}
 			return $links;
 		}
