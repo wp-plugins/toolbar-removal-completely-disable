@@ -178,13 +178,7 @@ Without a doubt things will continue to change, and it’ll be fun watching as W
 == License ==
 Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
 == Changelog ==
-the latest version of this plugin work on all wordpress version from 3.1+ to 3.7+ with new unified coding
-
-`All releases, prior latest stable, are deprecated, 
-and no longer supported on this project: is very 
-suggested upgrade to the latest build, always!`
-= Development Status =
-Developmental Code in Becoming!
+the latest version of this plugin work on all wordpress version from 3.1+ to 3.7+
 
 Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
@@ -240,8 +234,16 @@ No need to delete anything from the wp_option when deactivate!
 No need to delete anything from the wp_option when deleted!
 Not need other actions except installing or uninstall it!
 `
+`All releases, prior latest stable, are deprecated, 
+and no longer supported on this project: is very 
+suggested upgrade to the latest build, always!`
+= Development Status =
+Developmental Code in Becoming!
+
 = 2013.0615.0936 =
-* Release [STABLE] Disable Admin Bar and ToolBar with New Unified Coding!
+* Release [STABLE] Disable Admin Bar and ToolBar
+ * Disable Admin Bar and ToolBar with New Unified Coding!
+ * Work on all WordPress Version from 3.1+ to 3.7+
  * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
  * UPDATED Cleaning of GNU style code indentation
  * Bump Version 2013 Build 0615 Revision 0936

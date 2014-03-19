@@ -26,9 +26,9 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
+ * on an "AS IS", but WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see [GNU General Public Licenses](http://www.gnu.org/licenses/),
@@ -130,7 +130,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 	 * @package WP Disable Admin Bar and ToolBar
 	 * @subpackage WordPress PlugIn
 	 * @description Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
-	 * @since 3.1.0
+	 * @since  3.1.0
 	 * @tested 3.7.2
 	 * @version 2013.0615.0936
 	 * @status STABLE (trunk) release
@@ -168,7 +168,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	if ( $wp_version >= 3.2 )
 		{
-			add_action( 'admin_head', 'wptrcd_rbams' );
+			add_action( 'admin_head', 'wptrcd_rbams', 0 );
 		}
 
 	function wptrcd_rbf28px()
@@ -247,7 +247,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	if ( $wp_version >= 3.3 )
 		{
-			add_action( 'in_admin_header', 'wptrcd_atblh' );
+			add_action( 'in_admin_header', 'wptrcd_atblh', 0 );
 			add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
 		}
 
@@ -264,15 +264,15 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
 			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
 		}
-	add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc' );
+	add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc', 0 );
 
 	function wptrcd_rml( $links, $file )
 		{
 			if ( $file == plugin_basename( __FILE__ ) )
 				{
-					$links[] = '<a href="http://slangji.wordpress.com/donate/">Donate</a>';
-					$links[] = '<a href="http://slangji.wordpress.com/contact/">Contact</a>';
-					$links[] = '<a href="http://slangji.wordpress.com/plugins/">Other author plugin</a>';
+					$links[] = '<a title="Offer a Beer to sLa" href="http://slangji.wordpress.com/donate/">Donate</a>';
+					$links[] = '<a title="Bugfix and Suggestions" href="http://slangji.wordpress.com/contact/">Contact</a>';
+					$links[] = '<a title="Visit other author plugins" href="http://slangji.wordpress.com/plugins/">Other Author Plugins</a>';
 				}
 			return $links;
 		}
@@ -300,6 +300,6 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 			echo "-->\n\n";
 		}
-	add_action( 'wp_head', 'wptrcd_hfl' );
-	add_action( 'wp_footer', 'wptrcd_hfl' );
+	add_action( 'wp_head', 'wptrcd_hfl', 0 );
+	add_action( 'wp_footer', 'wptrcd_hfl', 0 );
 ?>
