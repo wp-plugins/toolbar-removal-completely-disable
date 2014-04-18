@@ -1,21 +1,21 @@
 === Disable Admin Bar and ToolBar ===
 Contributors: slangjis
-Donate link: http://slangji.wordpress.com/donate/
+Donate link: //slangji.wordpress.com/donate/
 Tags: admin-bar, adminbar, disable-admin-bar, disable-toolbar, disable-wordpress-admin-bar, disable-wordpress-toolbar, remove-admin-bar, remove-toolbar, remove-wordpress-admin-bar, remove-wordpress-toolbar, slangjis, toolbar
 Stable tag: trunk
 Requires at least: 3.1
-Tested up to: 3.7
+Tested up to: 3.7.3
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: //www.gnu.org/licenses/gpl-2.0.html
 disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
 == Description ==
 disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
 
-Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, backend Admin Menu Shadow Effect, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="http://wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="http://wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="http://wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automattic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.7+
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, backend Admin Menu Shadow Effect, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="//wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="//wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automattic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.7+
 
 The code of "Admin Bar Removal" and "ToolBar Removal" was unified, based on "Disable Admin Bar and ToolBar" plugin. The Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" was trasformed on standalone plugin for node/group removal only!
 
-Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
+Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
 Rules:
 
@@ -26,9 +26,9 @@ Rules:
 1. The configuration of this plugin is Automattic!
 1. Compatible with Shared, Dedicated, Cloud and VPS Hosting.
 1. Run on Hosting with high and low resources.
-1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
-1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+1. Work under [GPLv2](//www.gnu.org/licenses/gpl-2.0.html) or later License.
+1. Implement [GNU style](//www.gnu.org/prep/standards/standards.html) coding standard indentation.
+1. Meet detailed [Plugin Guidelines](//wordpress.org/plugins/about/guidelines/) quality requirements.
 
 Features:
 
@@ -71,18 +71,18 @@ Not need other actions except installing or uninstall it!
 `
 Thanks to: olyma, storkontheroof, focus3d
 
-* [My Others WordPress Plugins](http://slangji.wordpress.com/plugins/)
- * [WP Overview (lite)](http://wordpress.org/plugins/wp-overview-lite/)
- * [WP Missed Schedule](http://wordpress.org/plugins/wp-missed-schedule/)
- * [WP Admin Bar Removal](http://wordpress.org/plugins/wp-admin-bar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
- * [WP Admin Bar Removal Node](http://wordpress.org/plugins/wp-admin-bar-node-removal/)
- * [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/ToolBar-Removal-completely-disable-73548.html)
- * [WP ToolBar Removal Node](http://wordpress.org/plugins/wp-toolbar-node-removal/)
- * [Noindex (login) WordPress Deindexing](http://wordpress.org/plugins/wp-login-deindexing/) (refreshed)
- * [Noindex (total) WordPress Deindexing](http://wordpress.org/plugins/wp-total-deindexing/) (refreshed)
- * [IE Enhancer and Modernizer](http://wordpress.org/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
- * [Memory Load Consumption db size Usage Indicator](http://wordpress.org/plugins/wp-memory-db-indicator/) (new)
- * [Header and Footer Log](http://wordpress.org/plugins/wp-header-footer-log/) Only For Developers (and advanced users)
+* [My Others WordPress Plugins](//slangji.wordpress.com/plugins/)
+ * [WP Overview (lite)](//wordpress.org/plugins/wp-overview-lite/)
+ * [WP Missed Schedule](//wordpress.org/plugins/wp-missed-schedule/)
+ * [WP Admin Bar Removal](//wordpress.org/plugins/wp-admin-bar-removal/) Linked and reviewed at [softpedia.com](//webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
+ * [WP Admin Bar Removal Node](//wordpress.org/plugins/wp-admin-bar-node-removal/)
+ * [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Linked and reviewed at [softpedia.com](//webscripts.softpedia.com/script/Modules/WordPress-Plugins/ToolBar-Removal-completely-disable-73548.html)
+ * [WP ToolBar Removal Node](//wordpress.org/plugins/wp-toolbar-node-removal/)
+ * [Noindex (login) WordPress Deindexing](//wordpress.org/plugins/wp-login-deindexing/) (refreshed)
+ * [Noindex (total) WordPress Deindexing](//wordpress.org/plugins/wp-total-deindexing/) (refreshed)
+ * [IE Enhancer and Modernizer](//wordpress.org/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](//webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
+ * [Memory Load Consumption db size Usage Indicator](//wordpress.org/plugins/wp-memory-db-indicator/) (new)
+ * [Header and Footer Log](//wordpress.org/plugins/wp-header-footer-log/) Only For Developers (and advanced users)
 == Installation ==
 before install this plugin, is reccomended, but is not needed, to unflag -> personal options -> show admin bar/toolbar -> when viewing site/on dashboard
 
@@ -110,7 +110,7 @@ If all else fails and your site is broken remove directly via ftp on your host s
 == Frequently Asked Questions ==
 disable admin bar or toolbar on personal options turn off only theme integration but not remove code without minimizing memory consumption and speedup loading of control panel
 
-[Goodbye Admin Bar, Hello ToolBar](http://digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/) Posted on: January 13, 2012 by Jeff Starr
+[Goodbye Admin Bar, Hello ToolBar](//digwp.com/2012/01/goodbye-admin-bar-hello-toolbar/) Posted on: January 13, 2012 by Jeff Starr
 
 When the Admin Bar hit the streets in WordPress 3.1, people seemed to either love it or hate it. And rightly so, it was a significant change in the appearance of the WP Admin area, and if not disabled in your User Profile, the front-end of your site as well. Many tips, tricks and plugins for customizing the Admin Bar began appearing around the Web. And then just as the dust began to settle, BAM — the “Admin Bar” transforms into the “Toolbar” with the WordPress 3.3 update.
 
@@ -138,7 +138,7 @@ The new ToolBar certainly looks better, but concerns remain. From what I’ve ga
 So yeah, something changed, so the question for the Admin ToolBar is “what works and what doesn’t?” Let’s dig in and see what’s up..
 Admin Bar changes, now WP ToolBar
 
-As [Ipstenu puts it](http://wordpress.org/support/topic/hiding-admin-bar-in-wordpress-33#post-2495448): “You don’t have to like it, but it’s here to stay.” So it’s time to look at things practically and get on with it. First of all, if you have a plugin or functions script that hides, removes, or customizes the Admin Bar, definitely investigate to see if everything is still working according to plan.
+As [Ipstenu puts it](//wordpress.org/support/topic/hiding-admin-bar-in-wordpress-33#post-2495448): “You don’t have to like it, but it’s here to stay.” So it’s time to look at things practically and get on with it. First of all, if you have a plugin or functions script that hides, removes, or customizes the Admin Bar, definitely investigate to see if everything is still working according to plan.
 What works..
 
 After some testing, we’ve seen the following functions.php snippets continue to work in WordPress version 3.3:
@@ -176,11 +176,11 @@ Without a doubt things will continue to change, and it’ll be fun watching as W
 6. DashBoard with "WP ToolBar Removal": faster and user friendly ...
 7. Personal Options: not needed if Admin Bar or ToolBar is disadled and removed!
 == License ==
-Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+Work under [GPLv2](//www.gnu.org/licenses/gpl-2.0.html) or later License.
 == Changelog ==
 the latest version of this plugin work on all wordpress version from 3.1+ to 3.7+
 
-Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](http://wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
+Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
 Rules:
 
@@ -191,9 +191,9 @@ Rules:
 1. The configuration of this plugin is Automattic!
 1. Compatible with Shared, Dedicated, Cloud and VPS Hosting.
 1. Run on Hosting with high and low resources.
-1. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
-1. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
-1. Meet detailed [Plugin Guidelines](http://wordpress.org/plugins/about/guidelines/) quality requirements.
+1. Work under [GPLv2](//www.gnu.org/licenses/gpl-2.0.html) or later License.
+1. Implement [GNU style](//www.gnu.org/prep/standards/standards.html) coding standard indentation.
+1. Meet detailed [Plugin Guidelines](//wordpress.org/plugins/about/guidelines/) quality requirements.
 
 Features:
 
