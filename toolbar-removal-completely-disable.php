@@ -1,4 +1,4 @@
-<?php
+<?php 
 /*
 Plugin Name: Disable Admin Bar and ToolBar
 Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
@@ -7,7 +7,7 @@ Version: 2013.0615.0936
 Author: slangjis
 Author URI: http://slangji.wordpress.com/
 Requires at least: 3.1
-Tested up to: 3.7.3
+Tested up to: 3.7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style coding standard
