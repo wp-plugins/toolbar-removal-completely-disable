@@ -8,7 +8,7 @@ gpl-2.0.txt                                  4CC77B90AF91E615A64AE04893FDFFA7939
 humans.txt                                   B23DC35E29428A33E6B8F86B6B7E96706997B741
 index.php                                    C1F5BD88927AABB87A0E99889A16E69C7C4C5780
 license.txt                                  4CC77B90AF91E615A64AE04893FDFFA7939DB84C
-readme.txt                                   DA89CBEB133BBF692D69F7DE0F373A6D41FEEA11
+readme.txt                                   6E44DDE941A7C8C6FF50BC3C81FA7EC0EB6A639F
 toolbar-removal-completely-disable.php       0D16F528D3D9DEC7683ECAB188E9B7A37F8D350A
 
 /languages/
