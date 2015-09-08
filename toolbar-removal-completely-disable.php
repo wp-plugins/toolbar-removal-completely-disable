@@ -1,24 +1,29 @@
 <?php 
 /*
-Plugin Name: Disable Admin Bar and ToolBar
-Plugin URI: http://slangji.wordpress.com/toolbar-removal-completely-disable/
-Description: Disable WordPress 3.1+ Admin Bar and 3.3+ ToolBar (unified code work with WP 3.1+ ~ 3.7+) This is only a "Basic" disabler. For "Full" remover refer to <a href="//wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and <a href="//wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a> The configuration of this plugin is Automattic!
-Version: 2013.0615.0936
-Author: slangjis
-Author URI: http://slangji.wordpress.com/
+Plugin Name: WP Disable Admin Bar and Toolbar
+Plugin URI: //slangji.wordpress.com/toolbar-removal-completely-disable/
+Description: Disable WordPress 3.1+ Admin Bar and 3.3+ Toolbar (unified code work with WP 3.1+ to 3.7+) This is only a "Basic" disabler. For "Full" remover, admin control panel speedup, and memory optimizer, refer to <a href="//wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and <a href="//wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove Toolbar Frontend Backend and related Code">Toolbar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove Toolbar Node Group and Top DashBoard Links Alone">Toolbar Node Removal</a> The configuration of this plugin is Automatic! Build 2015-09-08
+Version: 2013.0615.2015
+Author: sLa NGjI's
+Author URI: //slangji.wordpress.com/
 Requires at least: 3.1
-Tested up to: 3.7.4
+Network: true
+Text Domain: wpadminbartoolbardisabler
+Domain Path: /languages
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: //www.gnu.org/licenses/gpl-2.0.html
 Indentation: GNU style coding standard
-Indentation URI: http://www.gnu.org/prep/standards/standards.html
+Indentation URI: //www.gnu.org/prep/standards/standards.html
+Humans: We are the humans behind
+Humans URI: //humanstxt.org/Standard.html
  *
- * LICENSING
+ * LICENSING (license.txt)
  *
- * [WP Disable Admin Bar and ToolBar](//wordpress.org/plugins/toolbar-removal-completely-disable/)
- * Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
+ * [WP Disable Admin Bar and Toolbar](//wordpress.org/plugins/toolbar-removal-completely-disable/)
  *
- * Copyright (C) 2011-2014 [slangjis](//slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
+ * Disable (basic) WordPress 3.1+ Admin Bar and 3.3+ Toolbar
+ *
+ * Copyright (C) 2011-2015 [slangjis](//slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](//wordpress.org/about/gpl/)
@@ -121,46 +126,55 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
  *
  * Please noted that for Completely Backend Removal is needed:
  * On WordPress 3.1+ (or later) [WP Admin Bar Removal](//wordpress.org/plugins/wp-admin-bar-removal/)
- * On WordPress 3.3+ (or later) [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/)
+ * On WordPress 3.3+ (or later) [WP Toolbar Removal](//wordpress.org/plugins/wp-toolbar-removal/)
  * Try also your Add-On [WP Admin Bar Removal Node](//wordpress.org/plugins/wp-admin-bar-node-removal/)
- * Try also your Add-On [WP ToolBar Removal Node](//wordpress.org/plugins/wp-toolbar-node-removal/)
+ * Try also your Add-On [WP Toolbar Removal Node](//wordpress.org/plugins/wp-toolbar-node-removal/)
  */
 
 	/**
-	 * @package WP Disable Admin Bar and ToolBar
-	 * @subpackage WordPress PlugIn
-	 * @description Disable WP 3.1+ Admin Bar and 3.3+ ToolBar
-	 * @since  3.1.0
-	 * @tested 3.7.3
-	 * @version 2013.0615.0936
-	 * @status STABLE (trunk) release
+	 * @package     WP Disable Admin Bar and Toolbar
+	 * @subpackage  WordPress PlugIn
+	 * @description Disable (basic) WordPress 3.1+ Admin Bar and 3.3+ Toolbar
+	 * @install     The configuration of this plugin is Automatic!
+	 * @since       3.1+
+	 * @tested      3.7+
+	 * @branche     2013
+	 * @version     2013.0615.2015
+	 * @build       2015-09-08 1ST - 2013-06-15
+	 * @status      STABLE
 	 * @development Code in Becoming!
-	 * @install The configuration of this Plugin is Automattic!
-	 * @author slangjis
-	 * @license GPLv2 or later
+	 * @author      slangjis
+	 * @license     GPLv2 or later
 	 * @indentation GNU style coding standard
-	 * @keytag 74be16979710d4c4e7c6647856088456
 	 */
 
-	if ( !function_exists( 'add_action' ) )
+	defined( 'ABSPATH' ) OR exit;
+
+	defined( 'WPINC' ) OR exit;
+
+	if ( ! function_exists( 'add_action' ) )
 		{
 			header( 'HTTP/0.9 403 Forbidden' );
 			header( 'HTTP/1.0 403 Forbidden' );
 			header( 'HTTP/1.1 403 Forbidden' );
 			header( 'Status: 403 Forbidden' );
 			header( 'Connection: Close' );
-				exit();
+				exit;
 		}
 
 	global $wp_version;
 
 	if ( $wp_version < 3.1 )
 		{
-			wp_die( __( 'This Plugin Requires WordPress 3.1+ or Greater: Activation Stopped!' ) );
+			wp_die( __( 'This Plugin Requires WordPress 3.1+ or Greater: Activation Stopped!', 'wpadminbartoolbardisabler'  ) );
+				exit;
 		}
 
 	function wptrcd_1st()
 		{
+			if ( ! current_user_can( 'activate_plugins' ) )
+				return;
+
 			$wp_path_to_this_file = preg_replace( '/(.*)plugins\/(.*)$/', WP_PLUGIN_DIR . "/$2", __FILE__ );
 			$this_plugin          = plugin_basename( trim( $wp_path_to_this_file ) );
 			$active_plugins       = get_option( 'active_plugins' );
@@ -175,81 +189,71 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 		}
 	add_action( 'activated_plugin', 'wptrcd_1st', 0 );
 
-	function wptrcd_rbams()
+	function wptrcd_languages()
 		{
-			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
-			echo '<style type="text/css">#adminmenushadow,#adminmenuback{background-image:none}</style>';
-			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
-		}
+			if ( ! current_user_can( 'activate_plugins' ) )
+				return;
 
-	if ( $wp_version >= 3.2 )
-		{
-			add_action( 'admin_head', 'wptrcd_rbams', 0 );
+			load_plugin_textdomain( 'wpadminbartoolbardisabler', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 		}
+	add_action( 'plugins_loaded', 'wptrcd_languages' );
 
 	function wptrcd_rbf28px()
 		{
-			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
+			echo "\n\n<!--Start Plugin WP Disable Admin Bar and Toolbar Code-->\n\n";
 			echo '<style type="text/css">html.wp-toolbar,html.wp-toolbar #wpcontent,html.wp-toolbar #adminmenu,html.wp-toolbar #wpadminbar,body.admin-bar,body.admin-bar #wpcontent,body.admin-bar #adminmenu,body.admin-bar #wpadminbar{padding-top:0px !important}</style>';
-			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
+			echo "\n\n<!--End Plugin WP Disable Admin Bar and Toolbar Code-->\n\n";
 		}
 	add_action( 'admin_print_styles', 'wptrcd_rbf28px', 21 );
 
 	function wptrcd_atblh()
 		{
-			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
+			echo "\n\n<!--Start Plugin WP Disable Admin Bar and Toolbar Code-->\n\n";
 ?>
 <style type="text/css">table#tbrcss td#tbrcss_ttl a:link,table#tbrcss td#tbrcss_ttl a:visited{text-decoration:none}table#tbrcss td#tbrcss_lgt,table#tbrcss td#tbrcss_lgt a{text-decoration:none}</style>
 <table style="margin-left:6px;float:left;z-index:100;position:relative;left:0px;top:0px;background:none;padding:0px;border:0px;border-bottom:1px solid #DFDFDF" id="tbrcss" border="0" cols="4" width="97%" height="33">
 <tr>
 <td align="left" valign="center" id="tbrcss_ttl">
-<?php
+<?php 
 
 	echo '<a href="' . home_url() . '">' . __( get_bloginfo() ) . '</a>';
-
 ?>
 </td>
 <td align="right" valign="center" id="tbrcss_lgt">
 <div style="padding-top:2px">
-<?php
+<?php 
 
 	echo date_i18n( get_option( 'date_format' ) );
-
 ?>
-
  @ 
-
-<?php
+<?php 
 
 	echo date_i18n( get_option( 'time_format' ) );
-
 ?>
-
-<?php
+<?php 
 
 	wp_get_current_user();
 
 	$current_user = wp_get_current_user();
 
-	if ( !( $current_user instanceof WP_User ) )
+	if ( ! ( $current_user instanceof WP_User ) )
 		return;
 
 	echo ' | ' . $current_user->display_name . '';
 
 	if ( is_multisite() && is_super_admin() )
 		{
-			if ( !is_network_admin() )
+			if ( ! is_network_admin() )
 				{
-					echo ' | <a href="' . network_admin_url() . '">' . __( 'Network Admin' ) . '</a>';
+					echo ' | <a href="' . network_admin_url() . '">' . __( 'Network Admin', 'wpadminbartoolbardisabler' ) . '</a>';
 				}
 			else
 				{
-					echo ' | <a href="' . get_DashBoard_url( get_current_user_id() ) . '">' . __( 'Site Admin' ) . '</a>';
+					echo ' | <a href="' . get_DashBoard_url( get_current_user_id() ) . '">' . __( 'Site Admin', 'wpadminbartoolbardisabler' ) . '</a>';
 				}
 		}
 
-	echo ' | <a href="' . wp_logout_url( home_url() ) . '">' . __( 'Log Out' ) . '</a>';
-
+	echo ' | <a href="' . wp_logout_url( home_url() ) . '">' . __( 'Log Out', 'wpadminbartoolbardisabler' ) . '</a>';
 ?>
 </div>
 </td>
@@ -257,49 +261,41 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 </td>
 </tr>
 </table>
-<?php
-			echo "\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
+<?php 
+			echo "\n<!--End Plugin WP Disable Admin Bar and Toolbar Code-->\n\n";
 		}
 
 	if ( $wp_version >= 3.3 )
 		{
-			add_action( 'in_admin_header', 'wptrcd_atblh', 0 );
+			add_action( 'in_admin_header', 'wptrcd_atblh' );
 			add_filter( 'show_wp_pointer_admin_bar', '__return_false' );
 		}
 
-	function wp_admin_bar_toolbar_init()
+	function wptrcd_init()
 		{
 			add_filter( 'show_admin_bar', '__return_false' );
 			add_filter( 'wp_admin_bar_class', '__return_false' );
 		}
-	add_filter( 'init', 'wp_admin_bar_toolbar_init', 9 );
+	add_filter( 'init', 'wptrcd_init', 9 );
 
 	function wptrcd_ruppoabpc()
 		{
-			echo "\n\n<!--Start Disable Admin Bar and ToolBar Code-->\n\n";
+			echo "\n\n<!--Start Plugin WP Disable Admin Bar and Toolbar Code-->\n\n";
 			echo '<style type="text/css">.show-admin-bar{display:none}</style>';
-			echo "\n\n<!--End Disable Admin Bar and ToolBar Code-->\n\n";
+			echo "\n\n<!--End Plugin WP Disable Admin Bar and Toolbar Code-->\n\n";
 		}
 	add_action( 'admin_print_styles-profile.php', 'wptrcd_ruppoabpc', 0 );
 
 	function wptrcd_prml( $links, $file )
 		{
+			if ( ! is_admin() && ! current_user_can( 'administrator' ) )
+				return;
+
 			if ( $file == plugin_basename( __FILE__ ) )
 				{
-					$links[] = '<a title="Offer a Beer to sLa" href="//slangji.wordpress.com/donate/">Donate</a>';
-					$links[] = '<a title="Bugfix and Suggestions" href="//slangji.wordpress.com/contact/">Contact</a>';
-
-					global $wp_version;
-
-					if ( $wp_version < 3.8 )
-						{
-							$links[] = '<a title="Visit other author plugins" href="//slangji.wordpress.com/plugins/">Other Author Plugins</a>';
-						}
-
-					if ( $wp_version >= 3.8 )
-						{
-							$links[] = '<a title="Visit other author plugins" href="//slangji.wordpress.com/plugins/">Other</a>';
-						}
+					$links[] = '<a title="'. __( 'Offer a Beer to sLa', 'wpadminbartoolbardisabler' ) .'" href="//slangji.wordpress.com/donate/">'. __( 'Donate', 'wpadminbartoolbardisabler' ) .'</a>';
+					$links[] = '<a title="'. __( 'Bugfix and Suggestions', 'wpadminbartoolbardisabler' ) .'" href="//slangji.wordpress.com/contact/">'. __( 'Contact', 'wpadminbartoolbardisabler' ) .'</a>';
+					$links[] = '<a title="'. __( 'Visit other author plugins', 'wpadminbartoolbardisabler' ) .'" href="//slangji.wordpress.com/plugins/">'. __( 'Other', 'wpadminbartoolbardisabler' ) .'</a>';
 				}
 			return $links;
 		}
@@ -307,14 +303,17 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 
 	function wptrcd_hfl()
 		{
-			echo "\n<!--Plugin Disable Admin Bar and ToolBar 2013.0615.0936 Active - Tag ".md5(md5("".""))."-->\n";
-			echo "\n<!--Site Optimized to Speedup Control Panel Minimize Memory Consumption with Disabled";
+			if ( ! is_home() && ! is_front_page() )
+				return;
+
+			echo "\n<!--Plugin Disable Admin Bar and Toolbar Active - Secured with Genuine Authenticity KeyTag-->\n";
+			echo "\n<!-- Site Admin Control Panel and Frontend User Experience Enhanced with Disabled";
 
 			global $wp_version;
 
 			if ( $wp_version >= 3.3 )
 				{
-					echo " ToolBar";
+					echo " Toolbar";
 				}
 
 			if ( $wp_version >= 3.1 )
@@ -325,7 +324,7 @@ Indentation URI: http://www.gnu.org/prep/standards/standards.html
 						}
 				}
 
-			echo "-->\n\n";
+			echo " -->\n\n";
 		}
 	add_action( 'wp_head', 'wptrcd_hfl', 0 );
 	add_action( 'wp_footer', 'wptrcd_hfl', 0 );

@@ -4,16 +4,15 @@ Donate link: http://slangji.wordpress.com/donate/
 Tags: admin-bar, adminbar, disable-admin-bar, disable-toolbar, disable-wordpress-admin-bar, disable-wordpress-toolbar, remove-admin-bar, remove-toolbar, remove-wordpress-admin-bar, remove-wordpress-toolbar, slangjis, toolbar
 Stable tag: trunk
 Requires at least: 3.1
-Tested up to: 4.0
-disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
+disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding (basic)
 == Description ==
-disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding
+disable wordpress admin bar and toolbar for all users on frontend and backend with new unified coding (basic)
 
-Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, backend Admin Menu Shadow Effect, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal refer to <a href="//wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="//wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automattic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.7+
+Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar, frontend 28px, Bump CB, Admin Bar and ToolBar Pointer ToolTips, User Personal Options Settings, without loosing Logout and Network MultiSite functionality! This is only a "basic" (disable only) disabler. For "full" (disable and remove) removal with backend Admin Menu Shadow Effect disabler, and Memory Optimizer, refer to <a href="//wordpress.org/plugins/wp-admin-bar-removal/" title="Completely Remove Admin Bar Frontend Backend and related Code">Admin Bar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-admin-bar-node-removal/" title="Remove Admin Bar Node Group and Top DashBoard Links Alone">Admin Bar Node Removal</a> and to <a href="//wordpress.org/plugins/wp-toolbar-removal/" title="Completely Remove ToolBar Frontend Backend and related Code">ToolBar Removal</a> with Add-On <a href="//wordpress.org/plugins/wp-toolbar-node-removal/" title="Remove ToolBar Node Group and Top DashBoard Links Alone">ToolBar Node Removal</a>. The configuration of this Plugin is Automatic! The first and only Plugin (for now) that really work on WordPress 3.1+ to 3.7+
 
 The code of "Admin Bar Removal" and "ToolBar Removal" was unified, based on "Disable Admin Bar and ToolBar" plugin. The Add-On "Admin Bar Removal Node" and "ToolBar Removal Node" was trasformed on standalone plugin for node/group removal only!
 
-Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
+Is planned compatibility update for WordPress 3.8+ or later? The plugin that is updated for compatibility with WordPress 3.8+ or later, with mobility menu preservation, is [WP Admin Bar Removal](//wordpress.org/plugins/wp-admin-bar-removal/) and [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
 Rules:
 
@@ -34,7 +33,6 @@ Features:
 1. Disable WordPress 3.3+ (or later) ToolBar
 1. Disable Frontend Bump CB
 1. Disable Frontend "28px gap" on top of Site Home Page
-1. Disable Backend DashBoard Admin Menu Shadow Effect
 1. Disable Backend DashBoard Admin Bar/ToolBar Pointer (ToolTips)
 1. Disable Backend "28px gap" on top of Admin DashBoard for WP 3.3+ or later
 1. Disable User Personal Options Settings "Show Admin Bar/ToolBar"
@@ -44,10 +42,7 @@ Features:
 `
 Speedup Frontend Loading
 Speedup Backennd Loading
-Speedup DashBoard Loading
 Reduce Core Memory Consumption
-Reduce WordPress Memory Usage
-Free Unused Memory Load
 Less Plugin Memory Consumption.
 Full Strict Security Rules Applied.
 Handy Syntax Improvement.
@@ -178,7 +173,7 @@ Work under [GPLv2](//www.gnu.org/licenses/gpl-2.0.html) or later License.
 == Changelog ==
 the latest version of this plugin work on all wordpress version from 3.1+ to 3.7+
 
-Is planned compatibility update for WordPress 3.8+ and 3.9+ ? The plugin that is updated for compatibility with WordPress 3.8+ and 3.9+ is [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
+Is planned compatibility update for WordPress 3.8+ or later? The plugin that is updated for compatibility with WordPress 3.8+ or later, with mobility menu preservation, is [WP Admin Bar Removal](//wordpress.org/plugins/wp-admin-bar-removal/) and [WP ToolBar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Please: migrate to it A.S.A.P.
 
 Rules:
 
@@ -199,7 +194,6 @@ Features:
 1. Disable WordPress 3.3+ (or later) ToolBar
 1. Disable Frontend Bump CB
 1. Disable Frontend "28px gap" on top of Site Home Page
-1. Disable Backend DashBoard Admin Menu Shadow Effect
 1. Disable Backend DashBoard Admin Bar/ToolBar Pointer (ToolTips)
 1. Disable Backend "28px gap" on top of Admin DashBoard for WP 3.3+ or later
 1. Disable User Personal Options Settings "Show Admin Bar/ToolBar"
@@ -208,11 +202,8 @@ Features:
 1. Show realtime datetime on top of DashBoard for WP 3.3+ or later
 `
 Speedup Frontend Loading
-Speedup Backennd Loading
-Speedup DashBoard Loading
+Speedup Backend Loading
 Reduce Core Memory Consumption
-Reduce WordPress Memory Usage
-Free Unused Memory Load
 Less Plugin Memory Consumption.
 Full Strict Security Rules Applied.
 Handy Syntax Improvement.
@@ -237,10 +228,18 @@ and no longer supported on this project: is very
 suggested upgrade to the latest build, always!`
 = Development Status =
 Developmental Code in Becoming!
-
+= 2013.0615.2015 =
+* Release [STABLE] More new improvements: now the plugin is more efficient!
+ * Disable (basic) Admin Bar and ToolBar with New Unified Coding!
+ * Work on all WordPress Version from 3.1+ to 3.7+
+ * NEW Support (basic) for WordPress 3.8+ or later
+ * NEW Code redesigned for not showing debug warning or annoying notices
+ * UPDATED Unified Coding with latest Enhancements
+ * REMOVED Backend DashBoard Admin Menu Shadow Effect Disabler
+ * Bump Version 2013 Build 0615 Revision 2015
 = 2013.0615.0936 =
 * Release [STABLE] Disable Admin Bar and ToolBar
- * Disable Admin Bar and ToolBar with New Unified Coding!
+ * Disable (basic) Admin Bar and ToolBar with New Unified Coding!
  * Work on all WordPress Version from 3.1+ to 3.7+
  * NEW Show realtime datetime on top of DashBoard for WP 3.3+ or later
  * UPDATED Cleaning of GNU style code indentation
@@ -285,6 +284,8 @@ Developmental Code in Becoming!
  * Nothing is written into wp_option database table.
  * Version 2011 Build 1212 Revision 2011
 == Upgrade Notice ==
+= 2013.0615.2015 =
+Release [STABLE] More new improvements: now the plugin is more efficient! Updated Unified Coding with latest Enhancements and removed Backend DashBoard Admin Menu Shadow Effect Disabler. Code redesigned for not showing debug warning, or annoying notices. Support (basic) for WordPress 3.8+ or later.
 = 2013.0615.0936 =
 Release [STABLE] Show realtime datetime on top of DashBoard for WP 3.3+ or later. This plugin Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar with new unified coding compatible up to WordPress 3.7+
 = 2013.0614.0504 =
@@ -293,15 +294,13 @@ Release [STABLE] Disable Backend DashBoard User Option Admin Bar/ToolBar Choice.
 Release [STABLE] Disable: Frontend Bump CB, Backend DashBoard Admin Menu Shadow Effect, Backend DashBoard Admin Menu Pointers Function, Backend "gap" on top of Admin DashBoard for WP 3.3+ or later. Add: Header and Footer Log.
 = 2011.1212.2011 =
 Release [STABLE] Disable (basic) WordPress 3.1+ (or later) Admin Bar, and WordPress 3.3+ (or later) ToolBar.
-
 == Disclaimer ==
-
 `sLa NGjI's Team do not provide support on wordpress.org forum!`
 
 Dear user of plugins or themes:
 
 `sLa NGjI’s Team has started adventure on
-wordpress.org forum since 2007: 7 years ago!`
+wordpress.org forum since 2007: 8 years ago!`
 
 Everything was very different from today: the plugins and themes developed by us were much less, and also the users who used it.
 

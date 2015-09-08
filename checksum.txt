@@ -1,0 +1,16 @@
+WP Disable Admin Bar and ToolBar - Build 2015-09-08 (Version 2013.0615.2015) Checksum
+
+--------------------------------- Tags Branche 2013 ---------------------------------
+
+index.html                                   7BFCA8C40496ED3D3847BC234BB62F1DE23D9AC7
+.htaccess                                    F1299D142116E068A20C172769B1C76F0123370D
+gpl-2.0.txt                                  4CC77B90AF91E615A64AE04893FDFFA7939DB84C
+humans.txt                                   B23DC35E29428A33E6B8F86B6B7E96706997B741
+index.php                                    C1F5BD88927AABB87A0E99889A16E69C7C4C5780
+license.txt                                  4CC77B90AF91E615A64AE04893FDFFA7939DB84C
+readme.txt                                   2F9D04C0106C552C056682D6829DB75EC445A6C0
+toolbar-removal-completely-disable.php       0D16F528D3D9DEC7683ECAB188E9B7A37F8D350A
+
+/languages/
+
+toolbar-removal-completely-disable.pot       BBC4C0A270721F8B0FC655D9E2DA7970A7D1A6A4
