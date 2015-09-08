@@ -67,13 +67,13 @@ Not need other actions except installing or uninstall it!
 `
 Thanks to: olyma, storkontheroof, focus3d
 
-* [My Others WordPress Plugins](//slangji.wordpress.com/plugins/)
- * [WP Overview (lite)](//wordpress.org/plugins/wp-overview-lite/) (refreshed)
- * [WP Missed Schedule](//wordpress.org/plugins/wp-missed-schedule/) (updated)
- * [WP Admin Bar Removal](//wordpress.org/plugins/wp-admin-bar-removal/) Linked and reviewed at [softpedia.com](//webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
- * [WP Toolbar Removal](//wordpress.org/plugins/wp-toolbar-removal/) Linked and reviewed at [softpedia.com](//webscripts.softpedia.com/script/Modules/WordPress-Plugins/Toolbar-Removal-completely-disable-73548.html)
+* [My Others WordPress Plugins](https://slangji.wordpress.com/plugins/) on [Softpedia Webscripts](http://webscripts.softpedia.com/publisher/sLa-1869786722.html) and [GitHub](https://github.com/slangji)
+ * [WP Overview (lite)](https://wordpress.org/plugins/wp-overview-lite/) (modules updated)
+ * [WP Missed Schedule](https://wordpress.org/plugins/wp-missed-schedule/) 200.000+ Downloads and 60.000+ Installs
+ * [WP Admin Bar Removal](https://wordpress.org/plugins/wp-admin-bar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
+ * [WP ToolBar Removal](https://wordpress.org/plugins/wp-toolbar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/ToolBar-Removal-completely-disable-73548.html)
  * [One Click Logout Barless](//wordpress.org/plugins/one-click-logout-barless/) (new)
- * [IE Enhancer and Modernizer](//wordpress.org/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](//webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
+ * [IE Enhancer and Modernizer](https://wordpress.org/plugins/wp-ie-enhancer-and-modernizer/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
  * [Memory Load Consumption db size Usage Indicator](//wordpress.org/plugins/wp-memory-db-indicator/) (new)
  * [Header Footer Login Log](//wordpress.org/plugins/wp-header-footer-log/) Only For Developers (and advanced users)
 == Installation ==
@@ -116,9 +116,14 @@ The WordPress 3.3 update focused heavily on streamlining and optimizing the Admi
 
 [Ipstenu wrote it](//wordpress.org/support/topic/hiding-admin-bar-in-wordpress-33#post-2495448)
 `
-“You don’t have to like it, but it’s here to stay.” So it’s time to look at things practically and get on with it. First of all, if you have a plugin or functions script that hides, removes, or customizes the Admin Bar, definitely investigate to see if everything is still working according to plan.
+"You don't have to like it, but it's here to stay."
+So it's time to look at things practically and get on with it.
+First of all, if you have a plugin or functions script that hides,
+removes, or customizes the Admin Bar, definitely investigate to see
+if everything is still working according to plan.
 
-After years of testing, since release of WordPress 3.1+, and after others releases of WordPress, at today, all work fine without any trouble.
+After years of testing, since release of WordPress 3.1+, after others
+releases of WordPress, at today, all work fine without any trouble.
 `
 Using the many Admin Bar tricks that became available around the Web, WordPress users dealt with the thing in their own way and moved on with their lives. Some use plugins, some custom snippets and scripts, some just love it as-is.
 
