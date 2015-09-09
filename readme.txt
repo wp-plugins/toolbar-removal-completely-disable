@@ -22,8 +22,8 @@ Rules:
 1. Compatible with: WordPress, bbPress, Buddypress.
 1. Unified Coding to run with WordPress 3.1+ to 3.7+
 1. Ready to Single and Network Multisite Environment.
-1. All in One Disabler 28px, Bump CB, Node, Shadow, Pointer, Profile, Code.
-1. The configuration of this plugin is Automattic!
+1. All in One Disabler 28px, Bump CB, Node, Pointer, Profile.
+1. The configuration of this plugin is Automatic!
 1. Compatible with Shared, Dedicated, Cloud and VPS Hosting.
 1. Run on Hosting with high and low resources.
 1. Work under [GPLv2](//www.gnu.org/licenses/gpl-2.0.html) or later License.
@@ -174,8 +174,8 @@ Rules:
 1. Compatible with: WordPress, bbPress, Buddypress.
 1. Unified Coding to run with WordPress 3.1+ to 3.7+
 1. Ready to Single and Network Multisite Environment.
-1. All in One Disabler 28px, Bump CB, Node, Shadow, Pointer, Profile, Code.
-1. The configuration of this plugin is Automattic!
+1. All in One Disabler 28px, Bump CB, Node, Pointer, Profile.
+1. The configuration of this plugin is Automatic!
 1. Compatible with Shared, Dedicated, Cloud and VPS Hosting.
 1. Run on Hosting with high and low resources.
 1. Work under [GPLv2](//www.gnu.org/licenses/gpl-2.0.html) or later License.
