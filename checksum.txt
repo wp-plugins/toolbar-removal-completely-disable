@@ -1,4 +1,4 @@
-WP Disable Admin Bar and ToolBar - Build 2015-09-08 (Version 2013.0615.2015) Checksum
+WP Disable Admin Bar and ToolBar - Build 2015-09-10 (Version 2013.0615.2015) Checksum
 
 --------------------------------- Tags Branche 2013 ---------------------------------
 
@@ -8,8 +8,9 @@ gpl-2.0.txt                                  4CC77B90AF91E615A64AE04893FDFFA7939
 humans.txt                                   B23DC35E29428A33E6B8F86B6B7E96706997B741
 index.php                                    C1F5BD88927AABB87A0E99889A16E69C7C4C5780
 license.txt                                  4CC77B90AF91E615A64AE04893FDFFA7939DB84C
-toolbar-removal-completely-disable.php       0D16F528D3D9DEC7683ECAB188E9B7A37F8D350A
+readme.txt                                   AF21849B9A91E8CD3DBBD6A6F2CF35772E3E41BD
+toolbar-removal-completely-disable.php       BCC5065C7D1A71206F60CF2CDF3DA8AB1626F907
 
 /languages/
 
-toolbar-removal-completely-disable.pot       BBC4C0A270721F8B0FC655D9E2DA7970A7D1A6A4
+toolbar-removal-completely-disable.pot       8FE6FE7EAD87BA8DC93561747807A3B6AE09F20F
